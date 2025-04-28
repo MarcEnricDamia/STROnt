@@ -5,13 +5,26 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/enric/ontologies/2025/3/STROnt">
+     ontologyIRI="http://www.semanticweb.org/enric/ontologies/2025/3/STROnt"
+     versionIRI="http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/1.2">
     <Prefix name="" IRI="http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:backwardCompatibleWith"/>
+        <Literal></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
+        <Literal>http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/0.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
+        <Literal>http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/1.1</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="#Attraction"/>
     </Declaration>
@@ -88,9 +101,6 @@
         <ObjectProperty IRI="#isHotelReserved"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isIn"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isInAttraction"/>
     </Declaration>
     <Declaration>
@@ -124,9 +134,6 @@
         <ObjectProperty IRI="#isOfferedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isRating"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isRatingAttraction"/>
     </Declaration>
     <Declaration>
@@ -134,9 +141,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isRatingRestaurant"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isReserved"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isRestaurantReserved"/>
@@ -151,16 +155,10 @@
         <ObjectProperty IRI="#makesHotelReservation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#makesReservation"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#makesRestaurantReservation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#makesTransportReservation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#newRating"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#newRatingAttraction"/>
@@ -178,13 +176,7 @@
         <DataProperty IRI="#attractionReservartionDate"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#date"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#eventDate"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasNameAttraction"/>
@@ -197,9 +189,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasNameRestaurant"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPrice"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasPriceHotel"/>
@@ -220,9 +209,6 @@
         <DataProperty IRI="#hotelReservationDate"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#isRated"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#isRatedAttraction"/>
     </Declaration>
     <Declaration>
@@ -230,9 +216,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#isRatedRestaurant"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isRecommended"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#isRecommendedHotel"/>
@@ -248,9 +231,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#newHotelRatingValue"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#newRatingValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#newRestaurantRatingValue"/>
@@ -1218,11 +1198,6 @@
         <Literal>Hotel Vista Sevilla</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasPrice"/>
-        <NamedIndividual IRI="#Hotel_1"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">278</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hotelCategory"/>
         <NamedIndividual IRI="#Hotel_1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
@@ -1342,85 +1317,6 @@
         <NamedIndividual IRI="#València"/>
         <Literal>39.4699,-0.3763</Literal>
     </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#IsAttractionReserved"/>
-        <ObjectProperty IRI="#isReserved"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isHotelReserved"/>
-        <ObjectProperty IRI="#isReserved"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isInAttraction"/>
-        <ObjectProperty IRI="#isIn"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isInEvent"/>
-        <ObjectProperty IRI="#isIn"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isInHotel"/>
-        <ObjectProperty IRI="#isIn"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isInRestaurant"/>
-        <ObjectProperty IRI="#isIn"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isInTransport"/>
-        <ObjectProperty IRI="#isIn"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isRatingAttraction"/>
-        <ObjectProperty IRI="#isRating"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isRatingHotel"/>
-        <ObjectProperty IRI="#isRating"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isRatingRestaurant"/>
-        <ObjectProperty IRI="#isRating"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isRestaurantReserved"/>
-        <ObjectProperty IRI="#isReserved"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isTransportReserved"/>
-        <ObjectProperty IRI="#isReserved"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#makesAttractionReservation"/>
-        <ObjectProperty IRI="#makesReservation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#makesHotelReservation"/>
-        <ObjectProperty IRI="#makesReservation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#makesRestaurantReservation"/>
-        <ObjectProperty IRI="#makesReservation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#makesTransportReservation"/>
-        <ObjectProperty IRI="#makesReservation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#newRatingAttraction"/>
-        <ObjectProperty IRI="#newRating"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#newRatingHotel"/>
-        <ObjectProperty IRI="#newRating"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#newRatingRestaurant"/>
-        <ObjectProperty IRI="#newRating"/>
-    </SubObjectPropertyOf>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#isIn"/>
-    </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#isOfTransportType"/>
     </FunctionalObjectProperty>
@@ -1632,98 +1528,6 @@
         <ObjectProperty IRI="#newRatingRestaurant"/>
         <Class IRI="#Restaurant"/>
     </ObjectPropertyRange>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#attractionRatingDate"/>
-        <DataProperty IRI="#date"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#attractionReservartionDate"/>
-        <DataProperty IRI="#date"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#eventDate"/>
-        <DataProperty IRI="#date"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasNameAttraction"/>
-        <DataProperty IRI="#hasName"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasNameEvent"/>
-        <DataProperty IRI="#hasName"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasNameHotel"/>
-        <DataProperty IRI="#hasName"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasNameRestaurant"/>
-        <DataProperty IRI="#hasName"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasPriceHotel"/>
-        <DataProperty IRI="#hasPrice"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasPriceRestaurant"/>
-        <DataProperty IRI="#hasPrice"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasPriceTransport"/>
-        <DataProperty IRI="#hasPrice"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hotelRatingDate"/>
-        <DataProperty IRI="#date"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hotelReservationDate"/>
-        <DataProperty IRI="#date"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#isRatedAttraction"/>
-        <DataProperty IRI="#isRated"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#isRatedHotel"/>
-        <DataProperty IRI="#isRated"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#isRatedRestaurant"/>
-        <DataProperty IRI="#isRated"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#isRecommendedHotel"/>
-        <DataProperty IRI="#isRecommended"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#isRecommendedRestaurant"/>
-        <DataProperty IRI="#isRecommended"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#newAttractionRatingValue"/>
-        <DataProperty IRI="#newRatingValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#newHotelRatingValue"/>
-        <DataProperty IRI="#newRatingValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#newRestaurantRatingValue"/>
-        <DataProperty IRI="#newRatingValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#restaurantRatingDate"/>
-        <DataProperty IRI="#date"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#restaurantReservationDate"/>
-        <DataProperty IRI="#date"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#transportReservationDate"/>
-        <DataProperty IRI="#date"/>
-    </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#attractionRatingDate"/>
         <Class IRI="#AttractionRating"/>
@@ -1775,10 +1579,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#hotelReservationDate"/>
         <Class IRI="#HotelReservation"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#isRated"/>
-        <Class IRI="#Rating"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#isRatedAttraction"/>
@@ -1837,10 +1637,6 @@
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#date"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#eventDate"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
@@ -1883,10 +1679,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#hotelReservationDate"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#isRated"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#isRatedAttraction"/>
@@ -2392,16 +2184,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#date</IRI>
-        <Literal>Date</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#date</IRI>
-        <Literal>Date</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#eventDate</IRI>
         <Literal>Date in which an event takes place</Literal>
     </AnnotationAssertion>
@@ -2409,16 +2191,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#eventDate</IRI>
         <Literal>Date of the event</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasName</IRI>
-        <Literal>Name of the instance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasName</IRI>
-        <Literal>Instance name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2459,16 +2231,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasNameRestaurant</IRI>
         <Literal>Restaurant name</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasPrice</IRI>
-        <Literal>Instance price</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasPrice</IRI>
-        <Literal>Price of the instance of the service</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2549,16 +2311,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isHotelReserved</IRI>
         <Literal>Hotel of the reservation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isIn</IRI>
-        <Literal>Object property connecting the instance with the city where it is located or it is held</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#isIn</IRI>
-        <Literal>Instance is in City</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2672,16 +2424,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isRated</IRI>
-        <Literal>Average rating of the instance given by users</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#isRated</IRI>
-        <Literal>Instance average rating</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#isRatedAttraction</IRI>
         <Literal>Average rating of the attraction instance given by users (from 0.0 to 5.0)</Literal>
     </AnnotationAssertion>
@@ -2709,16 +2451,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isRatedRestaurant</IRI>
         <Literal>Restaurant rating</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isRating</IRI>
-        <Literal>Connection between the rating and the customer who make it</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#isRating</IRI>
-        <Literal>Rating made by customer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2752,16 +2484,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isRecommended</IRI>
-        <Literal>Value true if averarge rating is bigger than 4.5</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#isRecommended</IRI>
-        <Literal>Instance is recommended</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#isRecommendedHotel</IRI>
         <Literal>Value True if average rating of the Hotel is higher than 4.5</Literal>
     </AnnotationAssertion>
@@ -2779,16 +2501,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isRecommendedRestaurant</IRI>
         <Literal>Restaurant is recommended</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isReserved</IRI>
-        <Literal>Connection between the reservation and the instance reserved</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#isReserved</IRI>
-        <Literal>Instance of the reservation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2841,16 +2553,6 @@
         <Literal>HotelReservation made by Customer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#makesReservation</IRI>
-        <Literal>Connection between the Reservation and the Customer who make it</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#makesReservation</IRI>
-        <Literal>Reservation made by Customer</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#makesRestaurantReservation</IRI>
         <Literal>Connection between the RestauranReservation and the Customer who make it</Literal>
@@ -2892,16 +2594,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#newRating</IRI>
-        <Literal>Connection between the rating and the instance rated</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#newRating</IRI>
-        <Literal>Instance of the rating</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#newRatingAttraction</IRI>
         <Literal>Connection between the rating and the attraction rated</Literal>
     </AnnotationAssertion>
@@ -2932,21 +2624,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#newRatingValue</IRI>
-        <Literal>Rating value given to the instance by Customer</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#newRatingValue</IRI>
-        <Literal>Rating value</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#newRestaurantRatingValue</IRI>
         <Literal>Rating value given to the Restaurant by the Customer (between 0.0 and 5.0)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#newRestaurantRatingValue</IRI>
         <Literal>RestaurantRating value</Literal>
     </AnnotationAssertion>

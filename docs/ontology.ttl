@@ -6,7 +6,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#> .
 
-<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt> rdf:type owl:Ontology .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt> rdf:type owl:Ontology ;
+                                                             owl:versionIRI <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/1.2> ;
+                                                             owl:backwardCompatibleWith "" ;
+                                                             owl:priorVersion "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/0.1" ,
+                                                                              "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/1.1" .
 
 #################################################################
 #    Annotation properties
@@ -40,7 +44,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#IsAttractionReserved
 :IsAttractionReserved rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :isReserved ;
                       rdfs:domain :AttractionReservation ;
                       rdfs:range :Attraction ;
                       rdfs:comment "Attraction included in the AttractionReservation" ;
@@ -57,23 +60,14 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved
 :isHotelReserved rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :isReserved ;
                  rdfs:domain :HotelReservation ;
                  rdfs:range :Hotel ;
                  rdfs:comment "Hotel included in the HotelReservation" ;
                  rdfs:label "Hotel of the reservation" .
 
 
-###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn
-:isIn rdf:type owl:ObjectProperty ,
-               owl:FunctionalProperty ;
-      rdfs:comment "Object property connecting the instance with the city where it is located or it is held" ;
-      rdfs:label "Instance is in City" .
-
-
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction
 :isInAttraction rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :isIn ;
                 rdfs:domain :Attraction ;
                 rdfs:range :City ;
                 rdfs:comment "Object property connecting the Attraction instance with the city where it is located" ;
@@ -82,7 +76,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent
 :isInEvent rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf :isIn ;
            rdfs:domain :Event ;
            rdfs:range :City ;
            rdfs:comment "Object property connecting the event instance with the city where it is held" ;
@@ -91,7 +84,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel
 :isInHotel rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf :isIn ;
            rdfs:domain :Hotel ;
            rdfs:range :City ;
            rdfs:comment "Object property connecting the Hotel instance with the city where it is located" ;
@@ -100,7 +92,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant
 :isInRestaurant rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :isIn ;
                 rdfs:domain :Restaurant ;
                 rdfs:range :City ;
                 rdfs:comment "Object property connecting the Restaurant instance with the city where it is located" ;
@@ -109,7 +100,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport
 :isInTransport rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf :isIn ;
                rdfs:domain :Transport ;
                rdfs:range :City ;
                rdfs:comment "Object property connecting the Transport instance with the city where the service is offered" ;
@@ -165,15 +155,8 @@ owl:versionInfo rdf:type rdfs:Datatype ;
              rdfs:label "Transport offered by TransportCompany" .
 
 
-###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRating
-:isRating rdf:type owl:ObjectProperty ;
-          rdfs:comment "Connection between the rating and the customer who make it" ;
-          rdfs:label "Rating made by customer" .
-
-
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingAttraction
 :isRatingAttraction rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :isRating ;
                     rdfs:domain :AttractionRating ;
                     rdfs:range :Customer ;
                     rdfs:comment "Connection between the attraction rating and the customer who make it" ;
@@ -182,7 +165,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingHotel
 :isRatingHotel rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf :isRating ;
                rdfs:domain :HotelRating ;
                rdfs:range :Customer ;
                rdfs:comment "Connection between the hotel rating and the customer who make it" ;
@@ -191,22 +173,14 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingRestaurant
 :isRatingRestaurant rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :isRating ;
                     rdfs:domain :RestaurantRating ;
                     rdfs:range :Customer ;
                     rdfs:comment "Connection between the restaurant rating and the customer who make it" ;
                     rdfs:label "RestaurantRating made by Customer" .
 
 
-###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isReserved
-:isReserved rdf:type owl:ObjectProperty ;
-            rdfs:comment "Connection between the reservation and the instance reserved" ;
-            rdfs:label "Instance of the reservation" .
-
-
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved
 :isRestaurantReserved rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :isReserved ;
                       rdfs:domain :RestaurantReservation ;
                       rdfs:range :Restaurant ;
                       rdfs:comment "Restaurant included in the RestaurantReservation" ;
@@ -215,7 +189,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isTransportReserved
 :isTransportReserved rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :isReserved ;
                      rdfs:domain :TransportReservation ;
                      rdfs:range :Transport ;
                      rdfs:comment "Transport included in the TransportReservation" ;
@@ -224,7 +197,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesAttractionReservation
 :makesAttractionReservation rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf :makesReservation ;
                             rdfs:domain :Customer ;
                             rdfs:range :AttractionReservation ;
                             rdfs:comment "Connection between the AttractionReservation and the Customer who make it" ;
@@ -233,22 +205,14 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation
 :makesHotelReservation rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :makesReservation ;
                        rdfs:domain :Customer ;
                        rdfs:range :HotelReservation ;
                        rdfs:comment "Connection between the HotelReservation and the Customer who make it" ;
                        rdfs:label "HotelReservation made by Customer" .
 
 
-###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesReservation
-:makesReservation rdf:type owl:ObjectProperty ;
-                  rdfs:label "Connection between the Reservation and the Customer who make it" ,
-                             "Reservation made by Customer" .
-
-
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation
 :makesRestaurantReservation rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf :makesReservation ;
                             rdfs:domain :Customer ;
                             rdfs:range :RestaurantReservation ;
                             rdfs:comment "Connection between the RestauranReservation and the Customer who make it" ;
@@ -257,22 +221,14 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesTransportReservation
 :makesTransportReservation rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf :makesReservation ;
                            rdfs:domain :Customer ;
                            rdfs:range :TransportReservation ;
                            rdfs:comment "Connection between the TransportReservation and the Customer who make it" ;
                            rdfs:label "TransportReservation made by Customer" .
 
 
-###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRating
-:newRating rdf:type owl:ObjectProperty ;
-           rdfs:comment "Connection between the rating and the instance rated" ;
-           rdfs:label "Instance of the rating" .
-
-
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingAttraction
 :newRatingAttraction rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :newRating ;
                      rdfs:domain :AttractionRating ;
                      rdfs:range :Attraction ;
                      rdfs:comment "Connection between the rating and the attraction rated" ;
@@ -281,7 +237,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingHotel
 :newRatingHotel rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :newRating ;
                 rdfs:domain :HotelRating ;
                 rdfs:range :Hotel ;
                 rdfs:comment "Connection between the rating and the hotel rated" ;
@@ -290,7 +245,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingRestaurant
 :newRatingRestaurant rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :newRating ;
                      rdfs:domain :RestaurantRating ;
                      rdfs:range :Restaurant ;
                      rdfs:comment "Connection between the rating and the restaurant rated" ;
@@ -303,7 +257,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionRatingDate
 :attractionRatingDate rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf :date ;
                       rdfs:domain :AttractionRating ;
                       rdfs:range xsd:dateTime ;
                       rdfs:comment "Date of attraction rating by customer" ;
@@ -312,38 +265,22 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionReservartionDate
 :attractionReservartionDate rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf :date ;
                             rdfs:domain :AttractionReservation ;
                             rdfs:range xsd:dateTime ;
                             rdfs:comment "Date of attraction reservation" ;
                             rdfs:label "Attraction reservation date" .
 
 
-###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date
-:date rdf:type owl:DatatypeProperty ;
-      rdfs:range xsd:dateTime ;
-      rdfs:comment "Date" ;
-      rdfs:label "Date" .
-
-
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate
 :eventDate rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf :date ;
            rdfs:domain :Event ;
            rdfs:range xsd:dateTime ;
            rdfs:comment "Date in which an event takes place" ;
            rdfs:label "Date of the event" .
 
 
-###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasName
-:hasName rdf:type owl:DatatypeProperty ;
-         rdfs:comment "Name of the instance" ;
-         rdfs:label "Instance name" .
-
-
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction
 :hasNameAttraction rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf :hasName ;
                    rdfs:domain :Attraction ;
                    rdfs:range xsd:string ;
                    rdfs:comment "Name of the attraction instance" ;
@@ -352,7 +289,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent
 :hasNameEvent rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf :hasName ;
               rdfs:domain :Event ;
               rdfs:range xsd:string ;
               rdfs:comment "Name of the Event instance" ;
@@ -361,7 +297,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel
 :hasNameHotel rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf :hasName ;
               rdfs:domain :Hotel ;
               rdfs:range xsd:string ;
               rdfs:comment "Name of the Hotel instance" ;
@@ -370,22 +305,14 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant
 :hasNameRestaurant rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf :hasName ;
                    rdfs:domain :Restaurant ;
                    rdfs:range xsd:string ;
                    rdfs:comment "Name of the Restaurant instance" ;
                    rdfs:label "Restaurant name" .
 
 
-###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPrice
-:hasPrice rdf:type owl:DatatypeProperty ;
-          rdfs:comment "Instance price" ,
-                       "Price of the instance of the service" .
-
-
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceHotel
 :hasPriceHotel rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf :hasPrice ;
                rdfs:domain :Hotel ;
                rdfs:range xsd:decimal ;
                rdfs:comment "Price by night of the Hotel instance" ;
@@ -394,7 +321,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant
 :hasPriceRestaurant rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf :hasPrice ;
                     rdfs:domain :Restaurant ;
                     rdfs:range xsd:decimal ;
                     rdfs:comment "Average price per meal of the Restaurant instance" ;
@@ -403,7 +329,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport
 :hasPriceTransport rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf :hasPrice ;
                    rdfs:domain :Transport ;
                    rdfs:range xsd:decimal ;
                    rdfs:comment "Average cost of the transport service instance" ;
@@ -420,7 +345,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelRatingDate
 :hotelRatingDate rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf :date ;
                  rdfs:domain :HotelRating ;
                  rdfs:range xsd:dateTime ;
                  rdfs:comment "Hotel rating date" ;
@@ -429,24 +353,14 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate
 :hotelReservationDate rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf :date ;
                       rdfs:domain :HotelReservation ;
                       rdfs:range xsd:dateTime ;
                       rdfs:comment "Day of hotel reservation" ;
                       rdfs:label "Hotel reservation date" .
 
 
-###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated
-:isRated rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Rating ;
-         rdfs:range xsd:decimal ;
-         rdfs:comment "Average rating of the instance given by users" ;
-         rdfs:label "Instance average rating" .
-
-
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction
 :isRatedAttraction rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf :isRated ;
                    rdfs:domain :Attraction ;
                    rdfs:range xsd:decimal ;
                    rdfs:comment "Average rating of the attraction instance given by users (from 0.0 to 5.0)" ;
@@ -455,7 +369,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel
 :isRatedHotel rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf :isRated ;
               rdfs:domain :Hotel ;
               rdfs:range xsd:decimal ;
               rdfs:comment "Average rating of the hotel instance given by users (from 0.0 to 5.0)" ;
@@ -464,22 +377,14 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant
 :isRatedRestaurant rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf :isRated ;
                    rdfs:domain :Restaurant ;
                    rdfs:range xsd:decimal ;
                    rdfs:comment "Average rating of the restaurant instance given by users (from 0.0 to 5.0)" ;
                    rdfs:label "Restaurant rating" .
 
 
-###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommended
-:isRecommended rdf:type owl:DatatypeProperty ;
-               rdfs:comment "Value true if averarge rating is bigger than 4.5" ;
-               rdfs:label "Instance is recommended" .
-
-
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel
 :isRecommendedHotel rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf :isRecommended ;
                     rdfs:domain :Hotel ;
                     rdfs:range xsd:boolean ;
                     rdfs:comment "Value True if average rating of the Hotel is higher than 4.5" ;
@@ -488,7 +393,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant
 :isRecommendedRestaurant rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf :isRecommended ;
                          rdfs:domain :Restaurant ;
                          rdfs:range xsd:boolean ;
                          rdfs:comment "Value True if average rating of the Restaurant is higher than 4.5" ;
@@ -505,7 +409,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue
 :newAttractionRatingValue rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf :newRatingValue ;
                           rdfs:domain :AttractionRating ;
                           rdfs:range xsd:decimal ;
                           rdfs:comment "Rating value given to the Attraction by the Customer (between 0.0 and 5.0)" ;
@@ -514,22 +417,14 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue
 :newHotelRatingValue rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf :newRatingValue ;
                      rdfs:domain :HotelRating ;
                      rdfs:range xsd:decimal ;
                      rdfs:comment "Rating value given to the Hotel by the Customer (between 0.0 and 5.0)" ;
                      rdfs:label "HotelRating value" .
 
 
-###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingValue
-:newRatingValue rdf:type owl:DatatypeProperty ;
-                rdfs:comment "Rating value given to the instance by Customer" ;
-                rdfs:label "Rating value" .
-
-
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue
 :newRestaurantRatingValue rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf :newRatingValue ;
                           rdfs:domain :RestaurantRating ;
                           rdfs:range xsd:decimal ;
                           rdfs:comment "Rating value given to the Restaurant by the Customer (between 0.0 and 5.0)" ,
@@ -538,7 +433,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantRatingDate
 :restaurantRatingDate rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf :date ;
                       rdfs:domain :RestaurantRating ;
                       rdfs:range xsd:dateTime ;
                       rdfs:comment "Date of restaurant rating by customer" ;
@@ -547,7 +441,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate
 :restaurantReservationDate rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf :date ;
                            rdfs:domain :RestaurantReservation ;
                            rdfs:range xsd:dateTime ;
                            rdfs:comment "Date of restaurant reservation" ;
@@ -556,7 +449,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
 
 ###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#transportReservationDate
 :transportReservationDate rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf :date ;
                           rdfs:domain :TransportReservation ;
                           rdfs:range xsd:dateTime ;
                           rdfs:comment "Date of transport reservation" ;
@@ -1005,7 +897,6 @@ owl:versionInfo rdf:type rdfs:Datatype ;
          :isInHotel :Sevilla ;
          :isOfHotelType :Beach ;
          :hasNameHotel "Hotel Vista Sevilla" ;
-         :hasPrice 278 ;
          :hotelCategory 4 ;
          :isRatedHotel 4.7 .
 
