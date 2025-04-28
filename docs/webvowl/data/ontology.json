@@ -1,0 +1,2401 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt" ],
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_2",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Event_2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Event_1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Events taking place in 2024 in cities with touristic interest"
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventType",
+      "undefined" : "Type of event"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Gastronomy",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Gastronomy"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Culture",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Culture"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sports",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Sports"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Music",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Music"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Technology",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Technology"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Exisiting type of events being held in, at least, one city during 2024"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Reservation",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reservation",
+      "undefined" : "Reservation"
+    },
+    "subClasses" : [ "17", "18", "2", "19" ],
+    "comment" : {
+      "undefined" : "Superclass including all types of reservations"
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel",
+      "undefined" : "Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Hotel_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Hotel2"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Hotels available to book during the events held in 2024"
+    },
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sant_Sebastià",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/San_Sebasti%C3%A1n",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Sant_Sebastià"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Toledo",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Toledo,_Spain",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Toledo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Màlaga",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/M%C3%A1laga",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Màlaga"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bilbao",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Bilbao",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Bilbao"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Madrid",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Madrid",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Madrid"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Pamplona",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Pamplona",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Pamplona"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cadis",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/C%C3%A1diz",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Cadis"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sevilla",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Seville",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Sevilla"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#València",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Valencia",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "València"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Barcelona",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Barcelona",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Barcelona"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Saragossa",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Zaragoza",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Saragossa"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "List of cities holding at least one event during 2024"
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttractionRating",
+      "undefined" : "Attraction rating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "AttractionRating_1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Rating of an attraction made by a customer"
+    },
+    "id" : "30",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportType",
+      "undefined" : "Type of transport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bicycle",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Bicycle"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Underground",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Underground"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bus",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Bus"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Taxi",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Taxi"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Trolley",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Trolley"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Existing types of urban transport available in, at least, one city"
+    },
+    "id" : "56"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportCompany",
+      "undefined" : "Transport Company"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#MoviCadis",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "MoviCadis"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CitySaragossa",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "CitySaragossa"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#UrbanMadrid",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "UrbanMadrid"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransBilbao",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "TransBilbao"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransToledo",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "TransToledo"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Companies delivering any kind of transport service"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelRating",
+      "undefined" : "Hotel Rating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "HotelRating_1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Rating of an hotel made by a customer"
+    },
+    "id" : "46",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "9",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Rating",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "undefined" : "Rating"
+    },
+    "subClasses" : [ "71", "46", "30" ],
+    "comment" : {
+      "undefined" : "Superclass including all types of ratings"
+    },
+    "id" : "31"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelReservation",
+      "undefined" : "Hotel reservation"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "HotelReservation_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_reservation_2",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Hotel_reservation_2"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Hotel reservation including date, customer and hotel"
+    },
+    "id" : "17",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportReservation",
+      "undefined" : "Transport reservation"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "TransportReservation_1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Transport reservation including date, customer and transport"
+    },
+    "id" : "19",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttractionType",
+      "undefined" : "Type of touristic attraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cultural",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Cultural"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Museum",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Museum"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Park",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Park"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Beach",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Beach"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Monument",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Monument"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Classification of available touristic attractions in, at least, one city"
+    },
+    "id" : "80"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RestaurantRating",
+      "undefined" : "Restaurant Rating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "RestaurantRating_1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Rating of a restaurant made by a customer"
+    },
+    "id" : "71",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RestaurantReservation",
+      "undefined" : "Restaurant reservation"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "RestaurantReservation_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_2",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "RestaurantReservation_2"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Restaurant reservation including date, customer and restaurant"
+    },
+    "id" : "2",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Customer",
+      "undefined" : "Person assisting to an event"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Customer_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_2",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Customer_2"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Person who assists to events and can book restaurants, hotels, transport and attractions"
+    },
+    "id" : "77"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CuisineType",
+      "undefined" : "Type of cuisine"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Italian",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Italian"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Japanese",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Japanese"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mexican",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Mexican"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mediterranean",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Mediterranean"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Andalucia",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Andalucia"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Type of cuisine offered by, at least, one of the restaurant instances"
+    },
+    "id" : "108"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "undefined" : "Transport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Transport_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_2",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Transport_2"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Available transport means in the cities during the events"
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attraction",
+      "undefined" : "Touristic attraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Attraction_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_2",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Attraction_2"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Places of touristic interest located in a city"
+    },
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "undefined" : "Restaurant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Restaurant_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_2",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Restaurant_2"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Restaurants available to eat during the events held in 2024"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttractionReservation",
+      "undefined" : "Attraction reservation"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation_1",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "AttractionReservation_1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Attraction reservation including date, customer and attraction"
+    },
+    "id" : "18",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelType",
+      "undefined" : "Type of hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Countryside",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Countryside"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Tourist",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Tourist"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Beach",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Beach"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Business",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Business"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Luxury",
+      "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+      "labels" : {
+        "IRI-based" : "Luxury"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Classification of available hotels according to its customer target"
+    },
+    "id" : "37"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "67",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "127",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isRestaurantReserved",
+      "undefined" : "Restaurant of the reservation"
+    },
+    "superproperty" : [ "4" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Restaurant included in the RestaurantReservation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfferedBy",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isOfferedBy",
+      "undefined" : "Transport offered by TransportCompany"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Object property connecting the transport service and the company delivering it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingValue",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "newRatingValue",
+      "undefined" : "Rating value"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Rating value given to the instance by Customer"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isInTransport",
+      "undefined" : "Transport city"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Object property connecting the Transport instance with the city where the service is offered"
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isRecommendedRestaurant",
+      "undefined" : "Restaurant is recommended"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Value True if average rating of the Restaurant is higher than 4.5"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceHotel",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasPriceHotel",
+      "undefined" : "Hotel price"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Price by night of the Hotel instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "eventDate",
+      "undefined" : "Date of the event"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Date in which an event takes place"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfHotelType",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isOfHotelType",
+      "undefined" : "Hotel is of type HotelType"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Obejct property connecting Hotel instances with its type"
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesReservation",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "makesReservation",
+      "undefined" : "Reservation made by Customer"
+    },
+    "domain" : "9",
+    "subproperty" : [ "40", "41", "42", "43" ],
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hotelReservationDate",
+      "undefined" : "Hotel reservation date"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Day of hotel reservation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingHotel",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "newRatingHotel",
+      "undefined" : "Hotel of the HotelRating"
+    },
+    "superproperty" : [ "47" ],
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "Connection between the rating and the hotel rated"
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionReservartionDate",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "attractionReservartionDate",
+      "undefined" : "Attraction reservation date"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "Date of attraction reservation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "isRecommendedHotel",
+      "undefined" : "Hotel is recommended"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Value True if average rating of the Hotel is higher than 4.5"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isReserved",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isReserved",
+      "undefined" : "Instance of the reservation"
+    },
+    "domain" : "9",
+    "subproperty" : [ "1", "53", "54", "55" ],
+    "comment" : {
+      "undefined" : "Connection between the reservation and the instance reserved"
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isTransportReserved",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isTransportReserved",
+      "undefined" : "Transport of the reservation"
+    },
+    "superproperty" : [ "4" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Transport included in the TransportReservation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "range" : "6",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "6",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "date",
+      "undefined" : "Date"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Date"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isInAttraction",
+      "undefined" : "Attraction city"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "63",
+    "comment" : {
+      "undefined" : "Object property connecting the Attraction instance with the city where it is located"
+    },
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "range" : "3",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "3",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "6",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "16",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "31",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "31",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isIn",
+      "undefined" : "Instance is in City"
+    },
+    "domain" : "9",
+    "subproperty" : [ "12", "62", "72", "73", "74" ],
+    "comment" : {
+      "undefined" : "Object property connecting the instance with the city where it is located or it is held"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasNameAttraction",
+      "undefined" : "Attraction name"
+    },
+    "domain" : "63",
+    "comment" : {
+      "undefined" : "Name of the attraction instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingAttraction",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "isRatingAttraction",
+      "undefined" : "AttractionRating made by Customer"
+    },
+    "superproperty" : [ "78" ],
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Connection between the attraction rating and the customer who make it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfAttractionType",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "isOfAttractionType",
+      "undefined" : "Attraction is of AttractionType"
+    },
+    "domain" : "63",
+    "comment" : {
+      "undefined" : "Object property connecting a touristic attraction instance with its type"
+    },
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "makesHotelReservation",
+      "undefined" : "HotelReservation made by Customer"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "77",
+    "comment" : {
+      "undefined" : "Connection between the HotelReservation and the Customer who make it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "range" : "16",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "16",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "16",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "isRatedAttraction",
+      "undefined" : "Attraction Rating"
+    },
+    "domain" : "63",
+    "comment" : {
+      "undefined" : "Average rating of the attraction instance given by users (from 0.0 to 5.0)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionRatingDate",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "attractionRatingDate",
+      "undefined" : "Attraction rating date"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Date of attraction rating by customer"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfEventType",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "isOfEventType",
+      "undefined" : "Event is of type EventType"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Object property connecting an Event instance with its type"
+    },
+    "attributes" : [ "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantRatingDate",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "restaurantRatingDate",
+      "undefined" : "Restaurant rating date"
+    },
+    "domain" : "71",
+    "comment" : {
+      "undefined" : "Date of restaurant rating by customer"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "location",
+      "undefined" : "City location"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Geographical location of the city instance given by latitude and longitude"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#transportReservationDate",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "transportReservationDate",
+      "undefined" : "Transport reservation date"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Date of transport reservation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesTransportReservation",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "makesTransportReservation",
+      "undefined" : "TransportReservation made by Customer"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "77",
+    "comment" : {
+      "undefined" : "Connection between the TransportReservation and the Customer who make it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "isRatedHotel",
+      "undefined" : "Hotel rating"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Average rating of the hotel instance given by users (from 0.0 to 5.0)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRating",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "newRating",
+      "undefined" : "Instance of the rating"
+    },
+    "domain" : "9",
+    "subproperty" : [ "101", "102", "45" ],
+    "comment" : {
+      "undefined" : "Connection between the rating and the instance rated"
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasPriceTransport",
+      "undefined" : "Transport price"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Average cost of the transport service instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "newRestaurantRatingValue"
+    },
+    "domain" : "71",
+    "comment" : {
+      "undefined" : "RestaurantRating value"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "isHotelReserved",
+      "undefined" : "Hotel of the reservation"
+    },
+    "superproperty" : [ "4" ],
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Hotel included in the HotelReservation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "restaurantReservationDate",
+      "undefined" : "Restaurant reservation date"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Date of restaurant reservation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingAttraction",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "newRatingAttraction",
+      "undefined" : "Attraction of the AttractionRating"
+    },
+    "superproperty" : [ "47" ],
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Connection between the rating and the attraction rated"
+    },
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasNameEvent",
+      "undefined" : "Event name"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Name of the Event instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasNameHotel",
+      "undefined" : "Hotel name"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Name of the Hotel instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "isRatedRestaurant",
+      "undefined" : "Restaurant rating"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Average rating of the restaurant instance given by users (from 0.0 to 5.0)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasPriceRestaurant",
+      "undefined" : "Restaurant price"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Average price per meal of the Restaurant instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelRatingDate",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hotelRatingDate",
+      "undefined" : "Date of hotel rating by customer"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "Hotel rating date"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "newAttractionRatingValue",
+      "undefined" : "AtractionRating value"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Rating value given to the Attraction by the Customer (between 0.0 and 5.0)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "newHotelRatingValue",
+      "undefined" : "HotelRating value"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "Rating value given to the Hotel by the Customer (between 0.0 and 5.0)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingRestaurant",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "newRatingRestaurant",
+      "undefined" : "Restaurant of the RestaurantRating"
+    },
+    "superproperty" : [ "47" ],
+    "domain" : "71",
+    "comment" : {
+      "undefined" : "Connection between the rating and the restaurant rated"
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#IsAttractionReserved",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "IsAttractionReserved",
+      "undefined" : "Attraction of the reservation"
+    },
+    "superproperty" : [ "4" ],
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "Attraction included in the AttractionReservation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "isRated",
+      "undefined" : "Instance average rating"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Average rating of the instance given by users"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelCategory",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hotelCategory",
+      "undefined" : "Hotel category"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Category of the Hotel instance in number of stars (from 1 to 5 from lower to higher)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasName",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "Instance name"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Name of the instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPrice",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "hasPrice"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Instance price"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingRestaurant",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "isRatingRestaurant",
+      "undefined" : "RestaurantRating made by Customer"
+    },
+    "superproperty" : [ "78" ],
+    "domain" : "71",
+    "comment" : {
+      "undefined" : "Connection between the restaurant rating and the customer who make it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "121"
+  }, {
+    "range" : "23",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "3",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "6",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isInHotel",
+      "undefined" : "Hotel city"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Object property connecting the Hotel instance with the city where it is located"
+    },
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "range" : "23",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingHotel",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "isRatingHotel",
+      "undefined" : "HotelRating made by customer"
+    },
+    "superproperty" : [ "78" ],
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "Connection between the hotel rating and the customer who make it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "127"
+  }, {
+    "range" : "3",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "6",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "23",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasNameRestaurant",
+      "undefined" : "Restaurant name"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Name of the Restaurant instance"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommended",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "isRecommended",
+      "undefined" : "Instance is recommended"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Value true if averarge rating is bigger than 4.5"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "range" : "13",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "11",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isInRestaurant",
+      "undefined" : "Restaurant city"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Object property connecting the Restaurant instance with the city where it is located"
+    },
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "makesRestaurantReservation",
+      "undefined" : "Restaurant reservation made by Customer"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "77",
+    "comment" : {
+      "undefined" : "Connection between the RestauranReservation and the Customer who make it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isAssistingTo",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isAssistingTo",
+      "undefined" : "Customer is assisting to Event"
+    },
+    "domain" : "77",
+    "comment" : {
+      "undefined" : "Connection between a customer and an event to which he/she is assisting"
+    },
+    "attributes" : [ "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesAttractionReservation",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "makesAttractionReservation",
+      "undefined" : "AttractionReservation made by Customer"
+    },
+    "superproperty" : [ "39" ],
+    "domain" : "77",
+    "comment" : {
+      "undefined" : "Connection between the AttractionReservation and the Customer who make it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfTransportType",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "isOfTransportType",
+      "undefined" : "Transport is of type TransportType"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Object property connecting the transport instance with its type"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isInEvent",
+      "undefined" : "Event city"
+    },
+    "superproperty" : [ "14" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Object property connecting the event instance with the city where it is held"
+    },
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRating",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isRating",
+      "undefined" : "Rating made by customer"
+    },
+    "domain" : "9",
+    "subproperty" : [ "76", "121", "127" ],
+    "comment" : {
+      "undefined" : "Connection between the rating and the customer who make it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfCuisineType",
+    "baseIri" : "http://www.semanticweb.org/enric/ontologies/2025/3/STROnt",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "isOfCuisineType",
+      "undefined" : "Restaurant offers CuisinType cuisine"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Object property connecting Restaurant instances with the type of cuisine they offer"
+    },
+    "attributes" : [ "object" ],
+    "id" : "137"
+  } ]
+}

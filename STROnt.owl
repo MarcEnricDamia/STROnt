@@ -1,0 +1,2993 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/enric/ontologies/2025/3/STROnt"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/enric/ontologies/2025/3/STROnt">
+    <Prefix name="" IRI="http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Attraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttractionRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttractionReservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttractionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CuisineType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotelRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotelReservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotelType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestaurantRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestaurantReservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportReservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsAttractionReserved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAssistingTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHotelReserved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInAttraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInHotel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInTransport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOfAttractionType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOfCuisineType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOfEventType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOfHotelType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOfTransportType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOfferedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRatingAttraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRatingHotel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRatingRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isReserved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRestaurantReserved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTransportReserved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makesAttractionReservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makesHotelReservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makesReservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makesRestaurantReservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makesTransportReservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#newRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#newRatingAttraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#newRatingHotel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#newRatingRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#attractionRatingDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#attractionReservartionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#eventDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNameAttraction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNameEvent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNameHotel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNameRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPriceHotel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPriceRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPriceTransport"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hotelCategory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hotelRatingDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hotelReservationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRatedAttraction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRatedHotel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRatedRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRecommended"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRecommendedHotel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRecommendedRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#newAttractionRatingValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#newHotelRatingValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#newRatingValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#newRestaurantRatingValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#restaurantRatingDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#restaurantReservationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#transportReservationDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andalucia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AttractionRating_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AttractionReservation_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bicycle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Business"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cadis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CitySaragossa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Countryside"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cultural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Culture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gastronomy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotelRating_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotelReservation_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_reservation_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Japanese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Luxury"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mediterranean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mexican"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monument"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MoviCadis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Music"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Màlaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RestaurantRating_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RestaurantReservation_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RestaurantReservation_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sant_Sebastià"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saragossa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Taxi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Technology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tourist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransBilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransToledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransportReservation_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transport_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transport_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trolley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Underground"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UrbanMadrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#València"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="http://schema.org/name"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="owl:versionInfo"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Attraction"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#isRatedAttraction"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:decimal"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AttractionRating"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#newAttractionRatingValue"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:decimal"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AttractionType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Beach"/>
+            <NamedIndividual IRI="#Cultural"/>
+            <NamedIndividual IRI="#Monument"/>
+            <NamedIndividual IRI="#Museum"/>
+            <NamedIndividual IRI="#Park"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CuisineType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Andalucia"/>
+            <NamedIndividual IRI="#Italian"/>
+            <NamedIndividual IRI="#Japanese"/>
+            <NamedIndividual IRI="#Mediterranean"/>
+            <NamedIndividual IRI="#Mexican"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EventType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Culture"/>
+            <NamedIndividual IRI="#Gastronomy"/>
+            <NamedIndividual IRI="#Music"/>
+            <NamedIndividual IRI="#Sports"/>
+            <NamedIndividual IRI="#Technology"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hotel"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hotelCategory"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#isRatedHotel"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:decimal"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HotelRating"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#newHotelRatingValue"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:decimal"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HotelType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Beach"/>
+            <NamedIndividual IRI="#Business"/>
+            <NamedIndividual IRI="#Countryside"/>
+            <NamedIndividual IRI="#Luxury"/>
+            <NamedIndividual IRI="#Tourist"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Restaurant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#isRatedRestaurant"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:decimal"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RestaurantRating"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#newRestaurantRatingValue"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:decimal"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TransportType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Bicycle"/>
+            <NamedIndividual IRI="#Bus"/>
+            <NamedIndividual IRI="#Taxi"/>
+            <NamedIndividual IRI="#Trolley"/>
+            <NamedIndividual IRI="#Underground"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AttractionRating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttractionReservation"/>
+        <Class IRI="#Reservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotelRating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotelReservation"/>
+        <Class IRI="#Reservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestaurantRating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestaurantReservation"/>
+        <Class IRI="#Reservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportReservation"/>
+        <Class IRI="#Reservation"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Attraction"/>
+        <Class IRI="#City"/>
+        <Class IRI="#Event"/>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Restaurant"/>
+        <Class IRI="#Transport"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#CuisineType"/>
+        <NamedIndividual IRI="#Andalucia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionRating"/>
+        <NamedIndividual IRI="#AttractionRating_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionReservation"/>
+        <NamedIndividual IRI="#AttractionReservation_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attraction"/>
+        <NamedIndividual IRI="#Attraction_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attraction"/>
+        <NamedIndividual IRI="#Attraction_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportType"/>
+        <NamedIndividual IRI="#Bicycle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportType"/>
+        <NamedIndividual IRI="#Bus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#Business"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Cadis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportCompany"/>
+        <NamedIndividual IRI="#CitySaragossa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#Countryside"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#Cultural"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Culture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#Event_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#Event_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Gastronomy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelRating"/>
+        <NamedIndividual IRI="#HotelRating_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelReservation"/>
+        <NamedIndividual IRI="#HotelReservation_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelReservation"/>
+        <NamedIndividual IRI="#Hotel_reservation_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuisineType"/>
+        <NamedIndividual IRI="#Italian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuisineType"/>
+        <NamedIndividual IRI="#Japanese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#Luxury"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuisineType"/>
+        <NamedIndividual IRI="#Mediterranean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuisineType"/>
+        <NamedIndividual IRI="#Mexican"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#Monument"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportCompany"/>
+        <NamedIndividual IRI="#MoviCadis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Music"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Màlaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestaurantRating"/>
+        <NamedIndividual IRI="#RestaurantRating_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestaurantReservation"/>
+        <NamedIndividual IRI="#RestaurantReservation_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestaurantReservation"/>
+        <NamedIndividual IRI="#RestaurantReservation_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#Restaurant_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#Restaurant_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Sant_Sebastià"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Saragossa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Sports"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportType"/>
+        <NamedIndividual IRI="#Taxi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Technology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#Tourist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportCompany"/>
+        <NamedIndividual IRI="#TransBilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportCompany"/>
+        <NamedIndividual IRI="#TransToledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportReservation"/>
+        <NamedIndividual IRI="#TransportReservation_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transport"/>
+        <NamedIndividual IRI="#Transport_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transport"/>
+        <NamedIndividual IRI="#Transport_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportType"/>
+        <NamedIndividual IRI="#Trolley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportType"/>
+        <NamedIndividual IRI="#Underground"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportCompany"/>
+        <NamedIndividual IRI="#UrbanMadrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#València"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRatingAttraction"/>
+        <NamedIndividual IRI="#AttractionRating_1"/>
+        <NamedIndividual IRI="#Customer_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#newRatingAttraction"/>
+        <NamedIndividual IRI="#AttractionRating_1"/>
+        <NamedIndividual IRI="#Attraction_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsAttractionReserved"/>
+        <NamedIndividual IRI="#AttractionReservation_1"/>
+        <NamedIndividual IRI="#Attraction_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInAttraction"/>
+        <NamedIndividual IRI="#Attraction_1"/>
+        <NamedIndividual IRI="#Saragossa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfAttractionType"/>
+        <NamedIndividual IRI="#Attraction_1"/>
+        <NamedIndividual IRI="#Museum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInAttraction"/>
+        <NamedIndividual IRI="#Attraction_2"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfAttractionType"/>
+        <NamedIndividual IRI="#Attraction_2"/>
+        <NamedIndividual IRI="#Monument"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssistingTo"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <NamedIndividual IRI="#Event_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#makesHotelReservation"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <NamedIndividual IRI="#HotelReservation_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#makesRestaurantReservation"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <NamedIndividual IRI="#RestaurantReservation_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#makesTransportReservation"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <NamedIndividual IRI="#TransportReservation_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAssistingTo"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <NamedIndividual IRI="#Event_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#makesAttractionReservation"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <NamedIndividual IRI="#AttractionReservation_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#makesHotelReservation"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <NamedIndividual IRI="#Hotel_reservation_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#makesRestaurantReservation"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <NamedIndividual IRI="#RestaurantReservation_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInEvent"/>
+        <NamedIndividual IRI="#Event_1"/>
+        <NamedIndividual IRI="#Cadis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfEventType"/>
+        <NamedIndividual IRI="#Event_1"/>
+        <NamedIndividual IRI="#Sports"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInEvent"/>
+        <NamedIndividual IRI="#Event_2"/>
+        <NamedIndividual IRI="#Cadis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfEventType"/>
+        <NamedIndividual IRI="#Event_2"/>
+        <NamedIndividual IRI="#Sports"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInHotel"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfHotelType"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <NamedIndividual IRI="#Luxury"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRatingHotel"/>
+        <NamedIndividual IRI="#HotelRating_1"/>
+        <NamedIndividual IRI="#Customer_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#newRatingHotel"/>
+        <NamedIndividual IRI="#HotelRating_1"/>
+        <NamedIndividual IRI="#Hotel2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHotelReserved"/>
+        <NamedIndividual IRI="#HotelReservation_1"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInHotel"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfHotelType"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <NamedIndividual IRI="#Beach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHotelReserved"/>
+        <NamedIndividual IRI="#Hotel_reservation_2"/>
+        <NamedIndividual IRI="#Hotel2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRatingRestaurant"/>
+        <NamedIndividual IRI="#RestaurantRating_1"/>
+        <NamedIndividual IRI="#Customer_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#newRatingRestaurant"/>
+        <NamedIndividual IRI="#RestaurantRating_1"/>
+        <NamedIndividual IRI="#Restaurant_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRestaurantReserved"/>
+        <NamedIndividual IRI="#RestaurantReservation_1"/>
+        <NamedIndividual IRI="#Restaurant_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRestaurantReserved"/>
+        <NamedIndividual IRI="#RestaurantReservation_2"/>
+        <NamedIndividual IRI="#Restaurant_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInRestaurant"/>
+        <NamedIndividual IRI="#Restaurant_1"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfCuisineType"/>
+        <NamedIndividual IRI="#Restaurant_1"/>
+        <NamedIndividual IRI="#Mexican"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInRestaurant"/>
+        <NamedIndividual IRI="#Restaurant_2"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfCuisineType"/>
+        <NamedIndividual IRI="#Restaurant_2"/>
+        <NamedIndividual IRI="#Japanese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTransportReserved"/>
+        <NamedIndividual IRI="#TransportReservation_1"/>
+        <NamedIndividual IRI="#Transport_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInTransport"/>
+        <NamedIndividual IRI="#Transport_1"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfTransportType"/>
+        <NamedIndividual IRI="#Transport_1"/>
+        <NamedIndividual IRI="#Underground"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfferedBy"/>
+        <NamedIndividual IRI="#Transport_1"/>
+        <NamedIndividual IRI="#UrbanMadrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInTransport"/>
+        <NamedIndividual IRI="#Transport_2"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfTransportType"/>
+        <NamedIndividual IRI="#Transport_2"/>
+        <NamedIndividual IRI="#Taxi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOfferedBy"/>
+        <NamedIndividual IRI="#Transport_2"/>
+        <NamedIndividual IRI="#TransBilbao"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#attractionRatingDate"/>
+        <NamedIndividual IRI="#AttractionRating_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-01T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#newAttractionRatingValue"/>
+        <NamedIndividual IRI="#AttractionRating_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#attractionReservartionDate"/>
+        <NamedIndividual IRI="#AttractionReservation_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-12T12:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNameAttraction"/>
+        <NamedIndividual IRI="#Attraction_1"/>
+        <Literal>Castell Saragossa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRatedAttraction"/>
+        <NamedIndividual IRI="#Attraction_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNameAttraction"/>
+        <NamedIndividual IRI="#Attraction_2"/>
+        <Literal>Castell Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRatedAttraction"/>
+        <NamedIndividual IRI="#Attraction_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Barcelona"/>
+        <Literal>41.3874,2.1686</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Bilbao"/>
+        <Literal>43.2630,-2.9350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Cadis"/>
+        <Literal>36.5297,-6.2920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eventDate"/>
+        <NamedIndividual IRI="#Event_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-02T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNameEvent"/>
+        <NamedIndividual IRI="#Event_1"/>
+        <Literal>Congrés Cadis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eventDate"/>
+        <NamedIndividual IRI="#Event_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-19T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNameEvent"/>
+        <NamedIndividual IRI="#Event_2"/>
+        <Literal>Carnaval Cadis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNameHotel"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <Literal>Hotel Royal Pamplona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceHotel"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hotelCategory"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRatedHotel"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hotelRatingDate"/>
+        <NamedIndividual IRI="#HotelRating_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-02T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#newHotelRatingValue"/>
+        <NamedIndividual IRI="#HotelRating_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hotelReservationDate"/>
+        <NamedIndividual IRI="#HotelReservation_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-10T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNameHotel"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <Literal>Hotel Vista Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">278</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hotelCategory"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRatedHotel"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hotelReservationDate"/>
+        <NamedIndividual IRI="#Hotel_reservation_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-11T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Madrid"/>
+        <Literal>40.4168,-3.7038</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Màlaga"/>
+        <Literal>36.7213,-4.4210</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Pamplona"/>
+        <Literal>42.8169,-1.6444</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#newRestaurantRatingValue"/>
+        <NamedIndividual IRI="#RestaurantRating_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#restaurantRatingDate"/>
+        <NamedIndividual IRI="#RestaurantRating_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-03T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#restaurantReservationDate"/>
+        <NamedIndividual IRI="#RestaurantReservation_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-10T20:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#restaurantReservationDate"/>
+        <NamedIndividual IRI="#RestaurantReservation_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-09T12:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNameRestaurant"/>
+        <NamedIndividual IRI="#Restaurant_1"/>
+        <Literal>Restaurant Tradició Toledo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceRestaurant"/>
+        <NamedIndividual IRI="#Restaurant_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRatedRestaurant"/>
+        <NamedIndividual IRI="#Restaurant_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNameRestaurant"/>
+        <NamedIndividual IRI="#Restaurant_2"/>
+        <Literal>Restaurant Gourmet Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceRestaurant"/>
+        <NamedIndividual IRI="#Restaurant_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRatedRestaurant"/>
+        <NamedIndividual IRI="#Restaurant_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Sant_Sebastià"/>
+        <Literal>43.3183,-1.9812</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Saragossa"/>
+        <Literal>41.6488,-0.8891</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Sevilla"/>
+        <Literal>37.3886,-5.9823</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Toledo"/>
+        <Literal>39.8628,-4.0273</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transportReservationDate"/>
+        <NamedIndividual IRI="#TransportReservation_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-09T09:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceTransport"/>
+        <NamedIndividual IRI="#Transport_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPriceTransport"/>
+        <NamedIndividual IRI="#Transport_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#València"/>
+        <Literal>39.4699,-0.3763</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsAttractionReserved"/>
+        <ObjectProperty IRI="#isReserved"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isHotelReserved"/>
+        <ObjectProperty IRI="#isReserved"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInAttraction"/>
+        <ObjectProperty IRI="#isIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInEvent"/>
+        <ObjectProperty IRI="#isIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInHotel"/>
+        <ObjectProperty IRI="#isIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInRestaurant"/>
+        <ObjectProperty IRI="#isIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInTransport"/>
+        <ObjectProperty IRI="#isIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRatingAttraction"/>
+        <ObjectProperty IRI="#isRating"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRatingHotel"/>
+        <ObjectProperty IRI="#isRating"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRatingRestaurant"/>
+        <ObjectProperty IRI="#isRating"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRestaurantReserved"/>
+        <ObjectProperty IRI="#isReserved"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTransportReserved"/>
+        <ObjectProperty IRI="#isReserved"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#makesAttractionReservation"/>
+        <ObjectProperty IRI="#makesReservation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#makesHotelReservation"/>
+        <ObjectProperty IRI="#makesReservation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#makesRestaurantReservation"/>
+        <ObjectProperty IRI="#makesReservation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#makesTransportReservation"/>
+        <ObjectProperty IRI="#makesReservation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#newRatingAttraction"/>
+        <ObjectProperty IRI="#newRating"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#newRatingHotel"/>
+        <ObjectProperty IRI="#newRating"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#newRatingRestaurant"/>
+        <ObjectProperty IRI="#newRating"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isIn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isOfTransportType"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsAttractionReserved"/>
+        <Class IRI="#AttractionReservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAssistingTo"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHotelReserved"/>
+        <Class IRI="#HotelReservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInAttraction"/>
+        <Class IRI="#Attraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInEvent"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInHotel"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInTransport"/>
+        <Class IRI="#Transport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOfAttractionType"/>
+        <Class IRI="#Attraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOfCuisineType"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOfEventType"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOfHotelType"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOfTransportType"/>
+        <Class IRI="#Transport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOfferedBy"/>
+        <Class IRI="#Transport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRatingAttraction"/>
+        <Class IRI="#AttractionRating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRatingHotel"/>
+        <Class IRI="#HotelRating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRatingRestaurant"/>
+        <Class IRI="#RestaurantRating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRestaurantReserved"/>
+        <Class IRI="#RestaurantReservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTransportReserved"/>
+        <Class IRI="#TransportReservation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#makesAttractionReservation"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#makesHotelReservation"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#makesRestaurantReservation"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#makesTransportReservation"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#newRatingAttraction"/>
+        <Class IRI="#AttractionRating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#newRatingHotel"/>
+        <Class IRI="#HotelRating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#newRatingRestaurant"/>
+        <Class IRI="#RestaurantRating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsAttractionReserved"/>
+        <Class IRI="#Attraction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAssistingTo"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHotelReserved"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInAttraction"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInEvent"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInHotel"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInRestaurant"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInTransport"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOfAttractionType"/>
+        <Class IRI="#AttractionType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOfCuisineType"/>
+        <Class IRI="#CuisineType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOfEventType"/>
+        <Class IRI="#EventType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOfHotelType"/>
+        <Class IRI="#HotelType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOfTransportType"/>
+        <Class IRI="#TransportType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOfferedBy"/>
+        <Class IRI="#TransportCompany"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRatingAttraction"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRatingHotel"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRatingRestaurant"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRestaurantReserved"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTransportReserved"/>
+        <Class IRI="#Transport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#makesAttractionReservation"/>
+        <Class IRI="#AttractionReservation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#makesHotelReservation"/>
+        <Class IRI="#HotelReservation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#makesRestaurantReservation"/>
+        <Class IRI="#RestaurantReservation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#makesTransportReservation"/>
+        <Class IRI="#TransportReservation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#newRatingAttraction"/>
+        <Class IRI="#Attraction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#newRatingHotel"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#newRatingRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#attractionRatingDate"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#attractionReservartionDate"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#eventDate"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNameAttraction"/>
+        <DataProperty IRI="#hasName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNameEvent"/>
+        <DataProperty IRI="#hasName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNameHotel"/>
+        <DataProperty IRI="#hasName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNameRestaurant"/>
+        <DataProperty IRI="#hasName"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPriceHotel"/>
+        <DataProperty IRI="#hasPrice"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPriceRestaurant"/>
+        <DataProperty IRI="#hasPrice"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPriceTransport"/>
+        <DataProperty IRI="#hasPrice"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hotelRatingDate"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hotelReservationDate"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isRatedAttraction"/>
+        <DataProperty IRI="#isRated"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isRatedHotel"/>
+        <DataProperty IRI="#isRated"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isRatedRestaurant"/>
+        <DataProperty IRI="#isRated"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isRecommendedHotel"/>
+        <DataProperty IRI="#isRecommended"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isRecommendedRestaurant"/>
+        <DataProperty IRI="#isRecommended"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#newAttractionRatingValue"/>
+        <DataProperty IRI="#newRatingValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#newHotelRatingValue"/>
+        <DataProperty IRI="#newRatingValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#newRestaurantRatingValue"/>
+        <DataProperty IRI="#newRatingValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#restaurantRatingDate"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#restaurantReservationDate"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#transportReservationDate"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#attractionRatingDate"/>
+        <Class IRI="#AttractionRating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#attractionReservartionDate"/>
+        <Class IRI="#AttractionReservation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#eventDate"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNameAttraction"/>
+        <Class IRI="#Attraction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNameEvent"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNameHotel"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNameRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPriceHotel"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPriceRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPriceTransport"/>
+        <Class IRI="#Transport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hotelCategory"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hotelRatingDate"/>
+        <Class IRI="#HotelRating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hotelReservationDate"/>
+        <Class IRI="#HotelReservation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isRated"/>
+        <Class IRI="#Rating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isRatedAttraction"/>
+        <Class IRI="#Attraction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isRatedHotel"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isRatedRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isRecommendedHotel"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isRecommendedRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#location"/>
+        <Class IRI="#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#newAttractionRatingValue"/>
+        <Class IRI="#AttractionRating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#newHotelRatingValue"/>
+        <Class IRI="#HotelRating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#newRestaurantRatingValue"/>
+        <Class IRI="#RestaurantRating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#restaurantRatingDate"/>
+        <Class IRI="#RestaurantRating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#restaurantReservationDate"/>
+        <Class IRI="#RestaurantReservation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transportReservationDate"/>
+        <Class IRI="#TransportReservation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#attractionRatingDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#attractionReservartionDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#eventDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNameAttraction"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNameEvent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNameHotel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNameRestaurant"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPriceHotel"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPriceRestaurant"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPriceTransport"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hotelCategory"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hotelRatingDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hotelReservationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isRated"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isRatedAttraction"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isRatedHotel"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isRatedRestaurant"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isRecommendedHotel"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isRecommendedRestaurant"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#newAttractionRatingValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#newHotelRatingValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#newRestaurantRatingValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#restaurantRatingDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#restaurantReservationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#transportReservationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Marks an hotel as recommended if average rating is over 4.5</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Hotel is recommended</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#isRatedHotel"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#isRecommendedHotel"/>
+                <Variable IRI="/r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Marks an hotel as not recommended if average rating is 4.5 or lower</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Hotel is not recommended</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#isRatedHotel"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#isRecommendedHotel"/>
+                <Variable IRI="/r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Marks a restaurant as recommended if average rating is over 4.5</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Restaruant is recommended</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#isRatedRestaurant"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#isRecommendedRestaurant"/>
+                <Variable IRI="/r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Marks a restaurant as not recommended if average rating is 4.5 or lower</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Restaurant is not recommended</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#isRatedRestaurant"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#isRecommendedRestaurant"/>
+                <Variable IRI="/r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://schema.org/name</IRI>
+        <Literal>STROnt (Smart Tourism and Recommendations Ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Attraction</IRI>
+        <Literal>Places of touristic interest located in a city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Attraction</IRI>
+        <Literal>Touristic attraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AttractionRating</IRI>
+        <Literal>Rating of an attraction made by a customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AttractionRating</IRI>
+        <Literal>Attraction rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AttractionReservation</IRI>
+        <Literal>Attraction reservation including date, customer and attraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AttractionReservation</IRI>
+        <Literal>Attraction reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AttractionType</IRI>
+        <Literal>Classification of available touristic attractions in, at least, one city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AttractionType</IRI>
+        <Literal>Type of touristic attraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Barcelona</IRI>
+        <Literal>https://dbpedia.org/page/Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Bilbao</IRI>
+        <Literal>https://dbpedia.org/page/Bilbao</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Cadis</IRI>
+        <Literal>https://dbpedia.org/page/C%C3%A1diz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#City</IRI>
+        <Literal>List of cities holding at least one event during 2024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#City</IRI>
+        <Literal>City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CuisineType</IRI>
+        <Literal>Type of cuisine offered by, at least, one of the restaurant instances</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CuisineType</IRI>
+        <Literal>Type of cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Customer</IRI>
+        <Literal>Person who assists to events and can book restaurants, hotels, transport and attractions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Customer</IRI>
+        <Literal>Person assisting to an event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Event</IRI>
+        <Literal>Events taking place in 2024 in cities with touristic interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Event</IRI>
+        <Literal>Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EventType</IRI>
+        <Literal>Exisiting type of events being held in, at least, one city during 2024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventType</IRI>
+        <Literal>Type of event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hotel</IRI>
+        <Literal>Hotels available to book during the events held in 2024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hotel</IRI>
+        <Literal>Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HotelRating</IRI>
+        <Literal>Rating of an hotel made by a customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HotelRating</IRI>
+        <Literal>Hotel Rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HotelReservation</IRI>
+        <Literal>Hotel reservation including date, customer and hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HotelReservation</IRI>
+        <Literal>Hotel reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HotelType</IRI>
+        <Literal>Classification of available hotels according to its customer target</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HotelType</IRI>
+        <Literal>Type of hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsAttractionReserved</IRI>
+        <Literal>Attraction included in the AttractionReservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IsAttractionReserved</IRI>
+        <Literal>Attraction of the reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Madrid</IRI>
+        <Literal>https://dbpedia.org/page/Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Màlaga</IRI>
+        <Literal>https://dbpedia.org/page/M%C3%A1laga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Pamplona</IRI>
+        <Literal>https://dbpedia.org/page/Pamplona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rating</IRI>
+        <Literal>Superclass including all types of ratings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rating</IRI>
+        <Literal>Rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reservation</IRI>
+        <Literal>Superclass including all types of reservations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Reservation</IRI>
+        <Literal>Reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Restaurant</IRI>
+        <Literal>Restaurants available to eat during the events held in 2024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Restaurant</IRI>
+        <Literal>Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestaurantRating</IRI>
+        <Literal>Rating of a restaurant made by a customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestaurantRating</IRI>
+        <Literal>Restaurant Rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestaurantReservation</IRI>
+        <Literal>Restaurant reservation including date, customer and restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestaurantReservation</IRI>
+        <Literal>Restaurant reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Sant_Sebastià</IRI>
+        <Literal>https://dbpedia.org/page/San_Sebasti%C3%A1n</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Saragossa</IRI>
+        <Literal>https://dbpedia.org/page/Zaragoza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Sevilla</IRI>
+        <Literal>https://dbpedia.org/page/Seville</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Toledo</IRI>
+        <Literal>https://dbpedia.org/page/Toledo,_Spain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transport</IRI>
+        <Literal>Available transport means in the cities during the events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transport</IRI>
+        <Literal>Transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportCompany</IRI>
+        <Literal>Companies delivering any kind of transport service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransportCompany</IRI>
+        <Literal>Transport Company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportReservation</IRI>
+        <Literal>Transport reservation including date, customer and transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransportReservation</IRI>
+        <Literal>Transport reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportType</IRI>
+        <Literal>Existing types of urban transport available in, at least, one city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransportType</IRI>
+        <Literal>Type of transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#València</IRI>
+        <Literal>https://dbpedia.org/page/Valencia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#attractionRatingDate</IRI>
+        <Literal>Date of attraction rating by customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#attractionRatingDate</IRI>
+        <Literal>Attraction rating date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#attractionReservartionDate</IRI>
+        <Literal>Date of attraction reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#attractionReservartionDate</IRI>
+        <Literal>Attraction reservation date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#date</IRI>
+        <Literal>Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#date</IRI>
+        <Literal>Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#eventDate</IRI>
+        <Literal>Date in which an event takes place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#eventDate</IRI>
+        <Literal>Date of the event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasName</IRI>
+        <Literal>Name of the instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasName</IRI>
+        <Literal>Instance name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNameAttraction</IRI>
+        <Literal>Name of the attraction instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNameAttraction</IRI>
+        <Literal>Attraction name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNameEvent</IRI>
+        <Literal>Name of the Event instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNameEvent</IRI>
+        <Literal>Event name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNameHotel</IRI>
+        <Literal>Name of the Hotel instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNameHotel</IRI>
+        <Literal>Hotel name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNameRestaurant</IRI>
+        <Literal>Name of the Restaurant instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNameRestaurant</IRI>
+        <Literal>Restaurant name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPrice</IRI>
+        <Literal>Instance price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPrice</IRI>
+        <Literal>Price of the instance of the service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPriceHotel</IRI>
+        <Literal>Price by night of the Hotel instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPriceHotel</IRI>
+        <Literal>Hotel price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPriceRestaurant</IRI>
+        <Literal>Average price per meal of the Restaurant instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPriceRestaurant</IRI>
+        <Literal>Restaurant price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPriceTransport</IRI>
+        <Literal>Average cost of the transport service instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPriceTransport</IRI>
+        <Literal>Transport price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hotelCategory</IRI>
+        <Literal>Category of the Hotel instance in number of stars (from 1 to 5 from lower to higher)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hotelCategory</IRI>
+        <Literal>Hotel category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hotelRatingDate</IRI>
+        <Literal>Hotel rating date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hotelRatingDate</IRI>
+        <Literal>Date of hotel rating by customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hotelReservationDate</IRI>
+        <Literal>Day of hotel reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hotelReservationDate</IRI>
+        <Literal>Hotel reservation date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAssistingTo</IRI>
+        <Literal>Connection between a customer and an event to which he/she is assisting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAssistingTo</IRI>
+        <Literal>Customer is assisting to Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isHotelReserved</IRI>
+        <Literal>Hotel included in the HotelReservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isHotelReserved</IRI>
+        <Literal>Hotel of the reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isIn</IRI>
+        <Literal>Object property connecting the instance with the city where it is located or it is held</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isIn</IRI>
+        <Literal>Instance is in City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isInAttraction</IRI>
+        <Literal>Object property connecting the Attraction instance with the city where it is located</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isInAttraction</IRI>
+        <Literal>Attraction city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isInEvent</IRI>
+        <Literal>Object property connecting the event instance with the city where it is held</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isInEvent</IRI>
+        <Literal>Event city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isInHotel</IRI>
+        <Literal>Object property connecting the Hotel instance with the city where it is located</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isInHotel</IRI>
+        <Literal>Hotel city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isInRestaurant</IRI>
+        <Literal>Object property connecting the Restaurant instance with the city where it is located</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isInRestaurant</IRI>
+        <Literal>Restaurant city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isInTransport</IRI>
+        <Literal>Object property connecting the Transport instance with the city where the service is offered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isInTransport</IRI>
+        <Literal>Transport city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isOfAttractionType</IRI>
+        <Literal>Object property connecting a touristic attraction instance with its type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOfAttractionType</IRI>
+        <Literal>Attraction is of AttractionType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isOfCuisineType</IRI>
+        <Literal>Object property connecting Restaurant instances with the type of cuisine they offer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOfCuisineType</IRI>
+        <Literal>Restaurant offers CuisinType cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isOfEventType</IRI>
+        <Literal>Object property connecting an Event instance with its type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOfEventType</IRI>
+        <Literal>Event is of type EventType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isOfHotelType</IRI>
+        <Literal>Obejct property connecting Hotel instances with its type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOfHotelType</IRI>
+        <Literal>Hotel is of type HotelType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isOfTransportType</IRI>
+        <Literal>Object property connecting the transport instance with its type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOfTransportType</IRI>
+        <Literal>Transport is of type TransportType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isOfferedBy</IRI>
+        <Literal>Object property connecting the transport service and the company delivering it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOfferedBy</IRI>
+        <Literal>Transport offered by TransportCompany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRated</IRI>
+        <Literal>Average rating of the instance given by users</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRated</IRI>
+        <Literal>Instance average rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRatedAttraction</IRI>
+        <Literal>Average rating of the attraction instance given by users (from 0.0 to 5.0)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRatedAttraction</IRI>
+        <Literal>Attraction Rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRatedHotel</IRI>
+        <Literal>Average rating of the hotel instance given by users (from 0.0 to 5.0)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRatedHotel</IRI>
+        <Literal>Hotel rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRatedRestaurant</IRI>
+        <Literal>Average rating of the restaurant instance given by users (from 0.0 to 5.0)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRatedRestaurant</IRI>
+        <Literal>Restaurant rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRating</IRI>
+        <Literal>Connection between the rating and the customer who make it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRating</IRI>
+        <Literal>Rating made by customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRatingAttraction</IRI>
+        <Literal>Connection between the attraction rating and the customer who make it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRatingAttraction</IRI>
+        <Literal>AttractionRating made by Customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRatingHotel</IRI>
+        <Literal>Connection between the hotel rating and the customer who make it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRatingHotel</IRI>
+        <Literal>HotelRating made by customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRatingRestaurant</IRI>
+        <Literal>Connection between the restaurant rating and the customer who make it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRatingRestaurant</IRI>
+        <Literal>RestaurantRating made by Customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRecommended</IRI>
+        <Literal>Value true if averarge rating is bigger than 4.5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRecommended</IRI>
+        <Literal>Instance is recommended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRecommendedHotel</IRI>
+        <Literal>Value True if average rating of the Hotel is higher than 4.5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRecommendedHotel</IRI>
+        <Literal>Hotel is recommended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRecommendedRestaurant</IRI>
+        <Literal>Value True if average rating of the Restaurant is higher than 4.5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRecommendedRestaurant</IRI>
+        <Literal>Restaurant is recommended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isReserved</IRI>
+        <Literal>Connection between the reservation and the instance reserved</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isReserved</IRI>
+        <Literal>Instance of the reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRestaurantReserved</IRI>
+        <Literal>Restaurant included in the RestaurantReservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRestaurantReserved</IRI>
+        <Literal>Restaurant of the reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isTransportReserved</IRI>
+        <Literal>Transport included in the TransportReservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTransportReserved</IRI>
+        <Literal>Transport of the reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#location</IRI>
+        <Literal>Geographical location of the city instance given by latitude and longitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#location</IRI>
+        <Literal>City location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#makesAttractionReservation</IRI>
+        <Literal>Connection between the AttractionReservation and the Customer who make it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#makesAttractionReservation</IRI>
+        <Literal>AttractionReservation made by Customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#makesHotelReservation</IRI>
+        <Literal>Connection between the HotelReservation and the Customer who make it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#makesHotelReservation</IRI>
+        <Literal>HotelReservation made by Customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#makesReservation</IRI>
+        <Literal>Connection between the Reservation and the Customer who make it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#makesReservation</IRI>
+        <Literal>Reservation made by Customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#makesRestaurantReservation</IRI>
+        <Literal>Connection between the RestauranReservation and the Customer who make it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#makesRestaurantReservation</IRI>
+        <Literal>Restaurant reservation made by Customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#makesTransportReservation</IRI>
+        <Literal>Connection between the TransportReservation and the Customer who make it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#makesTransportReservation</IRI>
+        <Literal>TransportReservation made by Customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#newAttractionRatingValue</IRI>
+        <Literal>Rating value given to the Attraction by the Customer (between 0.0 and 5.0)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#newAttractionRatingValue</IRI>
+        <Literal>AtractionRating value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#newHotelRatingValue</IRI>
+        <Literal>Rating value given to the Hotel by the Customer (between 0.0 and 5.0)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#newHotelRatingValue</IRI>
+        <Literal>HotelRating value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#newRating</IRI>
+        <Literal>Connection between the rating and the instance rated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#newRating</IRI>
+        <Literal>Instance of the rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#newRatingAttraction</IRI>
+        <Literal>Connection between the rating and the attraction rated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#newRatingAttraction</IRI>
+        <Literal>Attraction of the AttractionRating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#newRatingHotel</IRI>
+        <Literal>Connection between the rating and the hotel rated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#newRatingHotel</IRI>
+        <Literal>Hotel of the HotelRating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#newRatingRestaurant</IRI>
+        <Literal>Connection between the rating and the restaurant rated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#newRatingRestaurant</IRI>
+        <Literal>Restaurant of the RestaurantRating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#newRatingValue</IRI>
+        <Literal>Rating value given to the instance by Customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#newRatingValue</IRI>
+        <Literal>Rating value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#newRestaurantRatingValue</IRI>
+        <Literal>Rating value given to the Restaurant by the Customer (between 0.0 and 5.0)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#newRestaurantRatingValue</IRI>
+        <Literal>RestaurantRating value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#restaurantRatingDate</IRI>
+        <Literal>Date of restaurant rating by customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#restaurantRatingDate</IRI>
+        <Literal>Restaurant rating date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#restaurantReservationDate</IRI>
+        <Literal>Date of restaurant reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#restaurantReservationDate</IRI>
+        <Literal>Restaurant reservation date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#transportReservationDate</IRI>
+        <Literal>Date of transport reservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transportReservationDate</IRI>
+        <Literal>Transport reservation date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:versionInfo</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

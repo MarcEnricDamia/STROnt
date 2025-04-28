@@ -1,0 +1,1422 @@
+@prefix : <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#> .
+
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type rdfs:Datatype ;
+                         rdfs:comment "STROnt (Smart Tourism and Recommendations Ontology" .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type rdfs:Datatype ;
+                rdfs:comment 1.0 .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#IsAttractionReserved
+:IsAttractionReserved rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :isReserved ;
+                      rdfs:domain :AttractionReservation ;
+                      rdfs:range :Attraction ;
+                      rdfs:comment "Attraction included in the AttractionReservation" ;
+                      rdfs:label "Attraction of the reservation" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isAssistingTo
+:isAssistingTo rdf:type owl:ObjectProperty ;
+               rdfs:domain :Customer ;
+               rdfs:range :Event ;
+               rdfs:comment "Connection between a customer and an event to which he/she is assisting" ;
+               rdfs:label "Customer is assisting to Event" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved
+:isHotelReserved rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :isReserved ;
+                 rdfs:domain :HotelReservation ;
+                 rdfs:range :Hotel ;
+                 rdfs:comment "Hotel included in the HotelReservation" ;
+                 rdfs:label "Hotel of the reservation" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn
+:isIn rdf:type owl:ObjectProperty ,
+               owl:FunctionalProperty ;
+      rdfs:comment "Object property connecting the instance with the city where it is located or it is held" ;
+      rdfs:label "Instance is in City" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction
+:isInAttraction rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :isIn ;
+                rdfs:domain :Attraction ;
+                rdfs:range :City ;
+                rdfs:comment "Object property connecting the Attraction instance with the city where it is located" ;
+                rdfs:label "Attraction city" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent
+:isInEvent rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :isIn ;
+           rdfs:domain :Event ;
+           rdfs:range :City ;
+           rdfs:comment "Object property connecting the event instance with the city where it is held" ;
+           rdfs:label "Event city" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel
+:isInHotel rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :isIn ;
+           rdfs:domain :Hotel ;
+           rdfs:range :City ;
+           rdfs:comment "Object property connecting the Hotel instance with the city where it is located" ;
+           rdfs:label "Hotel city" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant
+:isInRestaurant rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :isIn ;
+                rdfs:domain :Restaurant ;
+                rdfs:range :City ;
+                rdfs:comment "Object property connecting the Restaurant instance with the city where it is located" ;
+                rdfs:label "Restaurant city" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport
+:isInTransport rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :isIn ;
+               rdfs:domain :Transport ;
+               rdfs:range :City ;
+               rdfs:comment "Object property connecting the Transport instance with the city where the service is offered" ;
+               rdfs:label "Transport city" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfAttractionType
+:isOfAttractionType rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Attraction ;
+                    rdfs:range :AttractionType ;
+                    rdfs:comment "Object property connecting a touristic attraction instance with its type" ;
+                    rdfs:label "Attraction is of AttractionType" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfCuisineType
+:isOfCuisineType rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Restaurant ;
+                 rdfs:range :CuisineType ;
+                 rdfs:comment "Object property connecting Restaurant instances with the type of cuisine they offer" ;
+                 rdfs:label "Restaurant offers CuisinType cuisine" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfEventType
+:isOfEventType rdf:type owl:ObjectProperty ;
+               rdfs:domain :Event ;
+               rdfs:range :EventType ;
+               rdfs:comment "Object property connecting an Event instance with its type" ;
+               rdfs:label "Event is of type EventType" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfHotelType
+:isOfHotelType rdf:type owl:ObjectProperty ;
+               rdfs:domain :Hotel ;
+               rdfs:range :HotelType ;
+               rdfs:comment "Obejct property connecting Hotel instances with its type" ;
+               rdfs:label "Hotel is of type HotelType" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfTransportType
+:isOfTransportType rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Transport ;
+                   rdfs:range :TransportType ;
+                   rdfs:comment "Object property connecting the transport instance with its type" ;
+                   rdfs:label "Transport is of type TransportType" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfferedBy
+:isOfferedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Transport ;
+             rdfs:range :TransportCompany ;
+             rdfs:comment "Object property connecting the transport service and the company delivering it." ;
+             rdfs:label "Transport offered by TransportCompany" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRating
+:isRating rdf:type owl:ObjectProperty ;
+          rdfs:comment "Connection between the rating and the customer who make it" ;
+          rdfs:label "Rating made by customer" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingAttraction
+:isRatingAttraction rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :isRating ;
+                    rdfs:domain :AttractionRating ;
+                    rdfs:range :Customer ;
+                    rdfs:comment "Connection between the attraction rating and the customer who make it" ;
+                    rdfs:label "AttractionRating made by Customer" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingHotel
+:isRatingHotel rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :isRating ;
+               rdfs:domain :HotelRating ;
+               rdfs:range :Customer ;
+               rdfs:comment "Connection between the hotel rating and the customer who make it" ;
+               rdfs:label "HotelRating made by customer" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingRestaurant
+:isRatingRestaurant rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :isRating ;
+                    rdfs:domain :RestaurantRating ;
+                    rdfs:range :Customer ;
+                    rdfs:comment "Connection between the restaurant rating and the customer who make it" ;
+                    rdfs:label "RestaurantRating made by Customer" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isReserved
+:isReserved rdf:type owl:ObjectProperty ;
+            rdfs:comment "Connection between the reservation and the instance reserved" ;
+            rdfs:label "Instance of the reservation" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved
+:isRestaurantReserved rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :isReserved ;
+                      rdfs:domain :RestaurantReservation ;
+                      rdfs:range :Restaurant ;
+                      rdfs:comment "Restaurant included in the RestaurantReservation" ;
+                      rdfs:label "Restaurant of the reservation" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isTransportReserved
+:isTransportReserved rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :isReserved ;
+                     rdfs:domain :TransportReservation ;
+                     rdfs:range :Transport ;
+                     rdfs:comment "Transport included in the TransportReservation" ;
+                     rdfs:label "Transport of the reservation" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesAttractionReservation
+:makesAttractionReservation rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :makesReservation ;
+                            rdfs:domain :Customer ;
+                            rdfs:range :AttractionReservation ;
+                            rdfs:comment "Connection between the AttractionReservation and the Customer who make it" ;
+                            rdfs:label "AttractionReservation made by Customer" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation
+:makesHotelReservation rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :makesReservation ;
+                       rdfs:domain :Customer ;
+                       rdfs:range :HotelReservation ;
+                       rdfs:comment "Connection between the HotelReservation and the Customer who make it" ;
+                       rdfs:label "HotelReservation made by Customer" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesReservation
+:makesReservation rdf:type owl:ObjectProperty ;
+                  rdfs:label "Connection between the Reservation and the Customer who make it" ,
+                             "Reservation made by Customer" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation
+:makesRestaurantReservation rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :makesReservation ;
+                            rdfs:domain :Customer ;
+                            rdfs:range :RestaurantReservation ;
+                            rdfs:comment "Connection between the RestauranReservation and the Customer who make it" ;
+                            rdfs:label "Restaurant reservation made by Customer" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesTransportReservation
+:makesTransportReservation rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :makesReservation ;
+                           rdfs:domain :Customer ;
+                           rdfs:range :TransportReservation ;
+                           rdfs:comment "Connection between the TransportReservation and the Customer who make it" ;
+                           rdfs:label "TransportReservation made by Customer" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRating
+:newRating rdf:type owl:ObjectProperty ;
+           rdfs:comment "Connection between the rating and the instance rated" ;
+           rdfs:label "Instance of the rating" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingAttraction
+:newRatingAttraction rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :newRating ;
+                     rdfs:domain :AttractionRating ;
+                     rdfs:range :Attraction ;
+                     rdfs:comment "Connection between the rating and the attraction rated" ;
+                     rdfs:label "Attraction of the AttractionRating" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingHotel
+:newRatingHotel rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :newRating ;
+                rdfs:domain :HotelRating ;
+                rdfs:range :Hotel ;
+                rdfs:comment "Connection between the rating and the hotel rated" ;
+                rdfs:label "Hotel of the HotelRating" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingRestaurant
+:newRatingRestaurant rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :newRating ;
+                     rdfs:domain :RestaurantRating ;
+                     rdfs:range :Restaurant ;
+                     rdfs:comment "Connection between the rating and the restaurant rated" ;
+                     rdfs:label "Restaurant of the RestaurantRating" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionRatingDate
+:attractionRatingDate rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :date ;
+                      rdfs:domain :AttractionRating ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:comment "Date of attraction rating by customer" ;
+                      rdfs:label "Attraction rating date" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionReservartionDate
+:attractionReservartionDate rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf :date ;
+                            rdfs:domain :AttractionReservation ;
+                            rdfs:range xsd:dateTime ;
+                            rdfs:comment "Date of attraction reservation" ;
+                            rdfs:label "Attraction reservation date" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:dateTime ;
+      rdfs:comment "Date" ;
+      rdfs:label "Date" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate
+:eventDate rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :date ;
+           rdfs:domain :Event ;
+           rdfs:range xsd:dateTime ;
+           rdfs:comment "Date in which an event takes place" ;
+           rdfs:label "Date of the event" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:comment "Name of the instance" ;
+         rdfs:label "Instance name" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction
+:hasNameAttraction rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :hasName ;
+                   rdfs:domain :Attraction ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Name of the attraction instance" ;
+                   rdfs:label "Attraction name" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent
+:hasNameEvent rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :hasName ;
+              rdfs:domain :Event ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Name of the Event instance" ;
+              rdfs:label "Event name" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel
+:hasNameHotel rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :hasName ;
+              rdfs:domain :Hotel ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Name of the Hotel instance" ;
+              rdfs:label "Hotel name" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant
+:hasNameRestaurant rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :hasName ;
+                   rdfs:domain :Restaurant ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Name of the Restaurant instance" ;
+                   rdfs:label "Restaurant name" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPrice
+:hasPrice rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Instance price" ,
+                       "Price of the instance of the service" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceHotel
+:hasPriceHotel rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasPrice ;
+               rdfs:domain :Hotel ;
+               rdfs:range xsd:decimal ;
+               rdfs:comment "Price by night of the Hotel instance" ;
+               rdfs:label "Hotel price" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant
+:hasPriceRestaurant rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasPrice ;
+                    rdfs:domain :Restaurant ;
+                    rdfs:range xsd:decimal ;
+                    rdfs:comment "Average price per meal of the Restaurant instance" ;
+                    rdfs:label "Restaurant price" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport
+:hasPriceTransport rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :hasPrice ;
+                   rdfs:domain :Transport ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:comment "Average cost of the transport service instance" ;
+                   rdfs:label "Transport price" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelCategory
+:hotelCategory rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Hotel ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "Category of the Hotel instance in number of stars (from 1 to 5 from lower to higher)" ;
+               rdfs:label "Hotel category" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelRatingDate
+:hotelRatingDate rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :date ;
+                 rdfs:domain :HotelRating ;
+                 rdfs:range xsd:dateTime ;
+                 rdfs:comment "Hotel rating date" ;
+                 rdfs:label "Date of hotel rating by customer" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate
+:hotelReservationDate rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :date ;
+                      rdfs:domain :HotelReservation ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:comment "Day of hotel reservation" ;
+                      rdfs:label "Hotel reservation date" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated
+:isRated rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Rating ;
+         rdfs:range xsd:decimal ;
+         rdfs:comment "Average rating of the instance given by users" ;
+         rdfs:label "Instance average rating" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction
+:isRatedAttraction rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :isRated ;
+                   rdfs:domain :Attraction ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:comment "Average rating of the attraction instance given by users (from 0.0 to 5.0)" ;
+                   rdfs:label "Attraction Rating" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel
+:isRatedHotel rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :isRated ;
+              rdfs:domain :Hotel ;
+              rdfs:range xsd:decimal ;
+              rdfs:comment "Average rating of the hotel instance given by users (from 0.0 to 5.0)" ;
+              rdfs:label "Hotel rating" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant
+:isRatedRestaurant rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :isRated ;
+                   rdfs:domain :Restaurant ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:comment "Average rating of the restaurant instance given by users (from 0.0 to 5.0)" ;
+                   rdfs:label "Restaurant rating" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommended
+:isRecommended rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Value true if averarge rating is bigger than 4.5" ;
+               rdfs:label "Instance is recommended" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel
+:isRecommendedHotel rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :isRecommended ;
+                    rdfs:domain :Hotel ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:comment "Value True if average rating of the Hotel is higher than 4.5" ;
+                    rdfs:label "Hotel is recommended" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant
+:isRecommendedRestaurant rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :isRecommended ;
+                         rdfs:domain :Restaurant ;
+                         rdfs:range xsd:boolean ;
+                         rdfs:comment "Value True if average rating of the Restaurant is higher than 4.5" ;
+                         rdfs:label "Restaurant is recommended" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location
+:location rdf:type owl:DatatypeProperty ;
+          rdfs:domain :City ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Geographical location of the city instance given by latitude and longitude" ;
+          rdfs:label "City location" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue
+:newAttractionRatingValue rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :newRatingValue ;
+                          rdfs:domain :AttractionRating ;
+                          rdfs:range xsd:decimal ;
+                          rdfs:comment "Rating value given to the Attraction by the Customer (between 0.0 and 5.0)" ;
+                          rdfs:label "AtractionRating value" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue
+:newHotelRatingValue rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :newRatingValue ;
+                     rdfs:domain :HotelRating ;
+                     rdfs:range xsd:decimal ;
+                     rdfs:comment "Rating value given to the Hotel by the Customer (between 0.0 and 5.0)" ;
+                     rdfs:label "HotelRating value" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingValue
+:newRatingValue rdf:type owl:DatatypeProperty ;
+                rdfs:comment "Rating value given to the instance by Customer" ;
+                rdfs:label "Rating value" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue
+:newRestaurantRatingValue rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :newRatingValue ;
+                          rdfs:domain :RestaurantRating ;
+                          rdfs:range xsd:decimal ;
+                          rdfs:comment "Rating value given to the Restaurant by the Customer (between 0.0 and 5.0)" ,
+                                       "RestaurantRating value" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantRatingDate
+:restaurantRatingDate rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :date ;
+                      rdfs:domain :RestaurantRating ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:comment "Date of restaurant rating by customer" ;
+                      rdfs:label "Restaurant rating date" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate
+:restaurantReservationDate rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :date ;
+                           rdfs:domain :RestaurantReservation ;
+                           rdfs:range xsd:dateTime ;
+                           rdfs:comment "Date of restaurant reservation" ;
+                           rdfs:label "Restaurant reservation date" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#transportReservationDate
+:transportReservationDate rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :date ;
+                          rdfs:domain :TransportReservation ;
+                          rdfs:range xsd:dateTime ;
+                          rdfs:comment "Date of transport reservation" ;
+                          rdfs:label "Transport reservation date" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction
+:Attraction rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty :isRatedAttraction ;
+                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                       owl:onDatatype xsd:decimal ;
+                                                       owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                              ]
+                                                                              [ xsd:maxInclusive 5.0
+                                                                              ]
+                                                                            )
+                                                     ]
+                                ] ;
+            rdfs:comment "Places of touristic interest located in a city" ;
+            rdfs:label "Touristic attraction" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating
+:AttractionRating rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :newAttractionRatingValue ;
+                                        owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                             owl:onDatatype xsd:decimal ;
+                                                             owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                    ]
+                                                                                    [ xsd:maxInclusive 5.0
+                                                                                    ]
+                                                                                  )
+                                                           ]
+                                      ] ;
+                  rdfs:subClassOf :Rating ;
+                  rdfs:comment "Rating of an attraction made by a customer" ;
+                  rdfs:label "Attraction rating" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation
+:AttractionReservation rdf:type owl:Class ;
+                       rdfs:subClassOf :Reservation ;
+                       rdfs:comment "Attraction reservation including date, customer and attraction" ;
+                       rdfs:label "Attraction reservation" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType
+:AttractionType rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( :Beach
+                                                  :Cultural
+                                                  :Monument
+                                                  :Museum
+                                                  :Park
+                                                )
+                                    ] ;
+                rdfs:comment "Classification of available touristic attractions in, at least, one city" ;
+                rdfs:label "Type of touristic attraction" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City
+:City rdf:type owl:Class ;
+      rdfs:comment "List of cities holding at least one event during 2024" ;
+      rdfs:label "City" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType
+:CuisineType rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Class ;
+                                   owl:oneOf ( :Andalucia
+                                               :Italian
+                                               :Japanese
+                                               :Mediterranean
+                                               :Mexican
+                                             )
+                                 ] ;
+             rdfs:comment "Type of cuisine offered by, at least, one of the restaurant instances" ;
+             rdfs:label "Type of cuisine" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer
+:Customer rdf:type owl:Class ;
+          rdfs:comment "Person who assists to events and can book restaurants, hotels, transport and attractions" ;
+          rdfs:label "Person assisting to an event" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event
+:Event rdf:type owl:Class ;
+       rdfs:comment "Events taking place in 2024 in cities with touristic interest" ;
+       rdfs:label "Event" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType
+:EventType rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:oneOf ( :Culture
+                                             :Gastronomy
+                                             :Music
+                                             :Sports
+                                             :Technology
+                                           )
+                               ] ;
+           rdfs:comment "Exisiting type of events being held in, at least, one city during 2024" ;
+           rdfs:label "Type of event" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel
+:Hotel rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hotelCategory ;
+                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:integer ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 1
+                                                                                                ]
+                                                                                                [ xsd:maxInclusive 5
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :isRatedHotel ;
+                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                         owl:onDatatype xsd:decimal ;
+                                                                         owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                ]
+                                                                                                [ xsd:maxInclusive 5.0
+                                                                                                ]
+                                                                                              )
+                                                                       ]
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:comment "Hotels available to book during the events held in 2024" ;
+       rdfs:label "Hotel" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating
+:HotelRating rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty :newHotelRatingValue ;
+                                   owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                        owl:onDatatype xsd:decimal ;
+                                                        owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                               ]
+                                                                               [ xsd:maxInclusive 5.0
+                                                                               ]
+                                                                             )
+                                                      ]
+                                 ] ;
+             rdfs:subClassOf :Rating ;
+             rdfs:comment "Rating of an hotel made by a customer" ;
+             rdfs:label "Hotel Rating" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation
+:HotelReservation rdf:type owl:Class ;
+                  rdfs:subClassOf :Reservation ;
+                  rdfs:comment "Hotel reservation including date, customer and hotel" ;
+                  rdfs:label "Hotel reservation" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType
+:HotelType rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:oneOf ( :Beach
+                                             :Business
+                                             :Countryside
+                                             :Luxury
+                                             :Tourist
+                                           )
+                               ] ;
+           rdfs:comment "Classification of available hotels according to its customer target" ;
+           rdfs:label "Type of hotel" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:comment "Superclass including all types of ratings" ;
+        rdfs:label "Rating" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Reservation
+:Reservation rdf:type owl:Class ;
+             rdfs:comment "Superclass including all types of reservations" ;
+             rdfs:label "Reservation" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant
+:Restaurant rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty :isRatedRestaurant ;
+                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                       owl:onDatatype xsd:decimal ;
+                                                       owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                              ]
+                                                                              [ xsd:maxInclusive 5.0
+                                                                              ]
+                                                                            )
+                                                     ]
+                                ] ;
+            rdfs:comment "Restaurants available to eat during the events held in 2024" ;
+            rdfs:label "Restaurant" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating
+:RestaurantRating rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :newRestaurantRatingValue ;
+                                        owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                             owl:onDatatype xsd:decimal ;
+                                                             owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                    ]
+                                                                                    [ xsd:maxInclusive 5.0
+                                                                                    ]
+                                                                                  )
+                                                           ]
+                                      ] ;
+                  rdfs:subClassOf :Rating ;
+                  rdfs:comment "Rating of a restaurant made by a customer" ;
+                  rdfs:label "Restaurant Rating" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation
+:RestaurantReservation rdf:type owl:Class ;
+                       rdfs:subClassOf :Reservation ;
+                       rdfs:comment "Restaurant reservation including date, customer and restaurant" ;
+                       rdfs:label "Restaurant reservation" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:comment "Available transport means in the cities during the events" ;
+           rdfs:label "Transport" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany
+:TransportCompany rdf:type owl:Class ;
+                  rdfs:comment "Companies delivering any kind of transport service" ;
+                  rdfs:label "Transport Company" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation
+:TransportReservation rdf:type owl:Class ;
+                      rdfs:subClassOf :Reservation ;
+                      rdfs:comment "Transport reservation including date, customer and transport" ;
+                      rdfs:label "Transport reservation" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType
+:TransportType rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:oneOf ( :Bicycle
+                                                 :Bus
+                                                 :Taxi
+                                                 :Trolley
+                                                 :Underground
+                                               )
+                                   ] ;
+               rdfs:comment "Existing types of urban transport available in, at least, one city" ;
+               rdfs:label "Type of transport" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Andalucia
+:Andalucia rdf:type owl:NamedIndividual ,
+                    :CuisineType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating_1
+:AttractionRating_1 rdf:type owl:NamedIndividual ,
+                             :AttractionRating ;
+                    :isRatingAttraction :Customer_1 ;
+                    :newRatingAttraction :Attraction_1 ;
+                    :attractionRatingDate "2024-01-01T00:00:00"^^xsd:dateTime ;
+                    :newAttractionRatingValue 3.9 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation_1
+:AttractionReservation_1 rdf:type owl:NamedIndividual ,
+                                  :AttractionReservation ;
+                         :IsAttractionReserved :Attraction_1 ;
+                         :attractionReservartionDate "2024-12-12T12:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_1
+:Attraction_1 rdf:type owl:NamedIndividual ,
+                       :Attraction ;
+              :isInAttraction :Saragossa ;
+              :isOfAttractionType :Museum ;
+              :hasNameAttraction "Castell Saragossa" ;
+              :isRatedAttraction 3.7 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_2
+:Attraction_2 rdf:type owl:NamedIndividual ,
+                       :Attraction ;
+              :isInAttraction :Sevilla ;
+              :isOfAttractionType :Monument ;
+              :hasNameAttraction "Castell Sevilla" ;
+              :isRatedAttraction 4.6 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Barcelona
+:Barcelona rdf:type owl:NamedIndividual ,
+                    :City ;
+           :location "41.3874,2.1686" ;
+           rdfs:sameAs "https://dbpedia.org/page/Barcelona" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Beach
+:Beach rdf:type owl:NamedIndividual ,
+                :AttractionType ,
+                :HotelType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bicycle
+:Bicycle rdf:type owl:NamedIndividual ,
+                  :TransportType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bilbao
+:Bilbao rdf:type owl:NamedIndividual ,
+                 :City ;
+        :location "43.2630,-2.9350" ;
+        rdfs:sameAs "https://dbpedia.org/page/Bilbao" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bus
+:Bus rdf:type owl:NamedIndividual ,
+              :TransportType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Business
+:Business rdf:type owl:NamedIndividual ,
+                   :HotelType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cadis
+:Cadis rdf:type owl:NamedIndividual ,
+                :City ;
+       :location "36.5297,-6.2920" ;
+       rdfs:sameAs "https://dbpedia.org/page/C%C3%A1diz" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CitySaragossa
+:CitySaragossa rdf:type owl:NamedIndividual ,
+                        :TransportCompany .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Countryside
+:Countryside rdf:type owl:NamedIndividual ,
+                      :HotelType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cultural
+:Cultural rdf:type owl:NamedIndividual ,
+                   :AttractionType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Culture
+:Culture rdf:type owl:NamedIndividual ,
+                  :EventType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_1
+:Customer_1 rdf:type owl:NamedIndividual ,
+                     :Customer ;
+            :isAssistingTo :Event_1 ;
+            :makesHotelReservation :HotelReservation_1 ;
+            :makesRestaurantReservation :RestaurantReservation_1 ;
+            :makesTransportReservation :TransportReservation_1 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_2
+:Customer_2 rdf:type owl:NamedIndividual ,
+                     :Customer ;
+            :isAssistingTo :Event_2 ;
+            :makesAttractionReservation :AttractionReservation_1 ;
+            :makesHotelReservation :Hotel_reservation_2 ;
+            :makesRestaurantReservation :RestaurantReservation_2 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_1
+:Event_1 rdf:type owl:NamedIndividual ,
+                  :Event ;
+         :isInEvent :Cadis ;
+         :isOfEventType :Sports ;
+         :eventDate "2024-06-02T00:00:00"^^xsd:dateTime ;
+         :hasNameEvent "Congrés Cadis" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_2
+:Event_2 rdf:type owl:NamedIndividual ,
+                  :Event ;
+         :isInEvent :Cadis ;
+         :isOfEventType :Sports ;
+         :eventDate "2024-04-19T00:00:00"^^xsd:dateTime ;
+         :hasNameEvent "Carnaval Cadis" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Gastronomy
+:Gastronomy rdf:type owl:NamedIndividual ,
+                     :EventType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2
+:Hotel2 rdf:type owl:NamedIndividual ,
+                 :Hotel ;
+        :isInHotel :Pamplona ;
+        :isOfHotelType :Luxury ;
+        :hasNameHotel "Hotel Royal Pamplona" ;
+        :hasPriceHotel 56 ;
+        :hotelCategory 3 ;
+        :isRatedHotel 3.9 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating_1
+:HotelRating_1 rdf:type owl:NamedIndividual ,
+                        :HotelRating ;
+               :isRatingHotel :Customer_2 ;
+               :newRatingHotel :Hotel2 ;
+               :hotelRatingDate "2024-02-02T00:00:00"^^xsd:dateTime ;
+               :newHotelRatingValue 4.4 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation_1
+:HotelReservation_1 rdf:type owl:NamedIndividual ,
+                             :HotelReservation ;
+                    :isHotelReserved :Hotel_1 ;
+                    :hotelReservationDate "2024-10-10T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1
+:Hotel_1 rdf:type owl:NamedIndividual ,
+                  :Hotel ;
+         :isInHotel :Sevilla ;
+         :isOfHotelType :Beach ;
+         :hasNameHotel "Hotel Vista Sevilla" ;
+         :hasPrice 278 ;
+         :hotelCategory 4 ;
+         :isRatedHotel 4.7 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_reservation_2
+:Hotel_reservation_2 rdf:type owl:NamedIndividual ,
+                              :HotelReservation ;
+                     :isHotelReserved :Hotel2 ;
+                     :hotelReservationDate "2024-11-11T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Italian
+:Italian rdf:type owl:NamedIndividual ,
+                  :CuisineType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Japanese
+:Japanese rdf:type owl:NamedIndividual ,
+                   :CuisineType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Luxury
+:Luxury rdf:type owl:NamedIndividual ,
+                 :HotelType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Madrid
+:Madrid rdf:type owl:NamedIndividual ,
+                 :City ;
+        :location "40.4168,-3.7038" ;
+        rdfs:sameAs "https://dbpedia.org/page/Madrid" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mediterranean
+:Mediterranean rdf:type owl:NamedIndividual ,
+                        :CuisineType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mexican
+:Mexican rdf:type owl:NamedIndividual ,
+                  :CuisineType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Monument
+:Monument rdf:type owl:NamedIndividual ,
+                   :AttractionType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#MoviCadis
+:MoviCadis rdf:type owl:NamedIndividual ,
+                    :TransportCompany .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Museum
+:Museum rdf:type owl:NamedIndividual ,
+                 :AttractionType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Music
+:Music rdf:type owl:NamedIndividual ,
+                :EventType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Màlaga
+:Màlaga rdf:type owl:NamedIndividual ,
+                 :City ;
+        :location "36.7213,-4.4210" ;
+        rdfs:sameAs "https://dbpedia.org/page/M%C3%A1laga" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Pamplona
+:Pamplona rdf:type owl:NamedIndividual ,
+                   :City ;
+          :location "42.8169,-1.6444" ;
+          rdfs:sameAs "https://dbpedia.org/page/Pamplona" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Park
+:Park rdf:type owl:NamedIndividual ,
+               :AttractionType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating_1
+:RestaurantRating_1 rdf:type owl:NamedIndividual ,
+                             :RestaurantRating ;
+                    :isRatingRestaurant :Customer_1 ;
+                    :newRatingRestaurant :Restaurant_1 ;
+                    :newRestaurantRatingValue 4.8 ;
+                    :restaurantRatingDate "2024-03-03T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_1
+:RestaurantReservation_1 rdf:type owl:NamedIndividual ,
+                                  :RestaurantReservation ;
+                         :isRestaurantReserved :Restaurant_1 ;
+                         :restaurantReservationDate "2024-10-10T20:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_2
+:RestaurantReservation_2 rdf:type owl:NamedIndividual ,
+                                  :RestaurantReservation ;
+                         :isRestaurantReserved :Restaurant_2 ;
+                         :restaurantReservationDate "2024-09-09T12:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1
+:Restaurant_1 rdf:type owl:NamedIndividual ,
+                       :Restaurant ;
+              :isInRestaurant :Toledo ;
+              :isOfCuisineType :Mexican ;
+              :hasNameRestaurant "Restaurant Tradició Toledo" ;
+              :hasPriceRestaurant 46 ;
+              :isRatedRestaurant 3.7 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_2
+:Restaurant_2 rdf:type owl:NamedIndividual ,
+                       :Restaurant ;
+              :isInRestaurant :Madrid ;
+              :isOfCuisineType :Japanese ;
+              :hasNameRestaurant "Restaurant Gourmet Madrid" ;
+              :hasPriceRestaurant 30 ;
+              :isRatedRestaurant 4.8 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sant_Sebastià
+:Sant_Sebastià rdf:type owl:NamedIndividual ,
+                        :City ;
+               :location "43.3183,-1.9812" ;
+               rdfs:sameAs "https://dbpedia.org/page/San_Sebasti%C3%A1n" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Saragossa
+:Saragossa rdf:type owl:NamedIndividual ,
+                    :City ;
+           :location "41.6488,-0.8891" ;
+           rdfs:sameAs "https://dbpedia.org/page/Zaragoza" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sevilla
+:Sevilla rdf:type owl:NamedIndividual ,
+                  :City ;
+         :location "37.3886,-5.9823" ;
+         rdfs:sameAs "https://dbpedia.org/page/Seville" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sports
+:Sports rdf:type owl:NamedIndividual ,
+                 :EventType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Taxi
+:Taxi rdf:type owl:NamedIndividual ,
+               :TransportType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Technology
+:Technology rdf:type owl:NamedIndividual ,
+                     :EventType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Toledo
+:Toledo rdf:type owl:NamedIndividual ,
+                 :City ;
+        :location "39.8628,-4.0273" ;
+        rdfs:sameAs "https://dbpedia.org/page/Toledo,_Spain" .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Tourist
+:Tourist rdf:type owl:NamedIndividual ,
+                  :HotelType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransBilbao
+:TransBilbao rdf:type owl:NamedIndividual ,
+                      :TransportCompany .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransToledo
+:TransToledo rdf:type owl:NamedIndividual ,
+                      :TransportCompany .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation_1
+:TransportReservation_1 rdf:type owl:NamedIndividual ,
+                                 :TransportReservation ;
+                        :isTransportReserved :Transport_1 ;
+                        :transportReservationDate "2024-09-09T09:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_1
+:Transport_1 rdf:type owl:NamedIndividual ,
+                      :Transport ;
+             :isInTransport :Madrid ;
+             :isOfTransportType :Underground ;
+             :isOfferedBy :UrbanMadrid ;
+             :hasPriceTransport 8.85 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_2
+:Transport_2 rdf:type owl:NamedIndividual ,
+                      :Transport ;
+             :isInTransport :Bilbao ;
+             :isOfTransportType :Taxi ;
+             :isOfferedBy :TransBilbao ;
+             :hasPriceTransport 5.75 .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Trolley
+:Trolley rdf:type owl:NamedIndividual ,
+                  :TransportType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Underground
+:Underground rdf:type owl:NamedIndividual ,
+                      :TransportType .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#UrbanMadrid
+:UrbanMadrid rdf:type owl:NamedIndividual ,
+                      :TransportCompany .
+
+
+###  http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#València
+:València rdf:type owl:NamedIndividual ,
+                   :City ;
+          :location "39.4699,-0.3763" ;
+          rdfs:sameAs "https://dbpedia.org/page/Valencia" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Attraction
+                :City
+                :Event
+                :Hotel
+                :Restaurant
+                :Transport
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Marks a restaurant as recommended if average rating is over 4.5" ;
+   rdfs:label "Restaruant is recommended" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Restaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isRatedRestaurant ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 4.5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isRecommendedRestaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Marks a restaurant as not recommended if average rating is 4.5 or lower" ;
+   rdfs:label "Restaurant is not recommended" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Restaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isRatedRestaurant ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 4.5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isRecommendedRestaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "false"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Marks an hotel as recommended if average rating is over 4.5" ;
+   rdfs:label "Hotel is recommended" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isRatedHotel ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 4.5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isRecommendedHotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Marks an hotel as not recommended if average rating is 4.5 or lower" ;
+   rdfs:label "Hotel is not recommended" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isRatedHotel ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 4.5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isRecommendedHotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "false"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1388 @@
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#comment> "STROnt (Smart Tourism and Recommendations Ontology" .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#IsAttractionReserved
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#IsAttractionReserved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#IsAttractionReserved> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isReserved> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#IsAttractionReserved> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#IsAttractionReserved> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#IsAttractionReserved> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction included in the AttractionReservation" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#IsAttractionReserved> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction of the reservation" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isAssistingTo
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isAssistingTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isAssistingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isAssistingTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isAssistingTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between a customer and an event to which he/she is assisting" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isAssistingTo> <http://www.w3.org/2000/01/rdf-schema#label> "Customer is assisting to Event" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isReserved> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel included in the HotelReservation" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel of the reservation" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property connecting the instance with the city where it is located or it is held" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn> <http://www.w3.org/2000/01/rdf-schema#label> "Instance is in City" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property connecting the Attraction instance with the city where it is located" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction city" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property connecting the event instance with the city where it is held" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Event city" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property connecting the Hotel instance with the city where it is located" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel city" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property connecting the Restaurant instance with the city where it is located" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant city" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isIn> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property connecting the Transport instance with the city where the service is offered" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport city" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfAttractionType
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfAttractionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfAttractionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfAttractionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfAttractionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property connecting a touristic attraction instance with its type" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfAttractionType> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction is of AttractionType" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfCuisineType
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfCuisineType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfCuisineType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfCuisineType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfCuisineType> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property connecting Restaurant instances with the type of cuisine they offer" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfCuisineType> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant offers CuisinType cuisine" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfEventType
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfEventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfEventType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfEventType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfEventType> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property connecting an Event instance with its type" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfEventType> <http://www.w3.org/2000/01/rdf-schema#label> "Event is of type EventType" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfHotelType
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfHotelType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfHotelType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfHotelType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfHotelType> <http://www.w3.org/2000/01/rdf-schema#comment> "Obejct property connecting Hotel instances with its type" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfHotelType> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel is of type HotelType" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfTransportType
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfTransportType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfTransportType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfTransportType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfTransportType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfTransportType> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property connecting the transport instance with its type" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfTransportType> <http://www.w3.org/2000/01/rdf-schema#label> "Transport is of type TransportType" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfferedBy
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfferedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfferedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfferedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfferedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property connecting the transport service and the company delivering it." .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfferedBy> <http://www.w3.org/2000/01/rdf-schema#label> "Transport offered by TransportCompany" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRating
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the rating and the customer who make it" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating made by customer" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingAttraction
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingAttraction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingAttraction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingAttraction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingAttraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the attraction rating and the customer who make it" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "AttractionRating made by Customer" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingHotel
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingHotel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the hotel rating and the customer who make it" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingHotel> <http://www.w3.org/2000/01/rdf-schema#label> "HotelRating made by customer" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingRestaurant
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the restaurant rating and the customer who make it" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "RestaurantRating made by Customer" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isReserved
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isReserved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isReserved> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the reservation and the instance reserved" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isReserved> <http://www.w3.org/2000/01/rdf-schema#label> "Instance of the reservation" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isReserved> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant included in the RestaurantReservation" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant of the reservation" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isTransportReserved
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isTransportReserved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isTransportReserved> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isReserved> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isTransportReserved> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isTransportReserved> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isTransportReserved> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport included in the TransportReservation" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isTransportReserved> <http://www.w3.org/2000/01/rdf-schema#label> "Transport of the reservation" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesAttractionReservation
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesAttractionReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesAttractionReservation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesAttractionReservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesAttractionReservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesAttractionReservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the AttractionReservation and the Customer who make it" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesAttractionReservation> <http://www.w3.org/2000/01/rdf-schema#label> "AttractionReservation made by Customer" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the HotelReservation and the Customer who make it" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation> <http://www.w3.org/2000/01/rdf-schema#label> "HotelReservation made by Customer" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesReservation
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesReservation> <http://www.w3.org/2000/01/rdf-schema#label> "Connection between the Reservation and the Customer who make it" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesReservation> <http://www.w3.org/2000/01/rdf-schema#label> "Reservation made by Customer" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the RestauranReservation and the Customer who make it" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant reservation made by Customer" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesTransportReservation
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesTransportReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesTransportReservation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesTransportReservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesTransportReservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesTransportReservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the TransportReservation and the Customer who make it" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesTransportReservation> <http://www.w3.org/2000/01/rdf-schema#label> "TransportReservation made by Customer" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRating
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the rating and the instance rated" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRating> <http://www.w3.org/2000/01/rdf-schema#label> "Instance of the rating" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingAttraction
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingAttraction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingAttraction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingAttraction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingAttraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the rating and the attraction rated" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction of the AttractionRating" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingHotel
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingHotel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the rating and the hotel rated" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel of the HotelRating" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingRestaurant
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Connection between the rating and the restaurant rated" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant of the RestaurantRating" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionRatingDate
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionRatingDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionRatingDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionRatingDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionRatingDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionRatingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of attraction rating by customer" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionRatingDate> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction rating date" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionReservartionDate
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionReservartionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionReservartionDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionReservartionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionReservartionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionReservartionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of attraction reservation" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionReservartionDate> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction reservation date" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> <http://www.w3.org/2000/01/rdf-schema#comment> "Date" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> <http://www.w3.org/2000/01/rdf-schema#label> "Date" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date in which an event takes place" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate> <http://www.w3.org/2000/01/rdf-schema#label> "Date of the event" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasName
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the instance" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "Instance name" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasName> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the attraction instance" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction name" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasName> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the Event instance" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Event name" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasName> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the Hotel instance" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel name" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasName> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the Restaurant instance" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant name" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPrice
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance price" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Price of the instance of the service" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceHotel
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceHotel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPrice> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Price by night of the Hotel instance" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel price" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPrice> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Average price per meal of the Restaurant instance" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant price" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPrice> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport> <http://www.w3.org/2000/01/rdf-schema#comment> "Average cost of the transport service instance" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport price" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelCategory
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of the Hotel instance in number of stars (from 1 to 5 from lower to higher)" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel category" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelRatingDate
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelRatingDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelRatingDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelRatingDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelRatingDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelRatingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel rating date" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelRatingDate> <http://www.w3.org/2000/01/rdf-schema#label> "Date of hotel rating by customer" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Day of hotel reservation" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel reservation date" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Rating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated> <http://www.w3.org/2000/01/rdf-schema#comment> "Average rating of the instance given by users" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated> <http://www.w3.org/2000/01/rdf-schema#label> "Instance average rating" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Average rating of the attraction instance given by users (from 0.0 to 5.0)" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction Rating" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Average rating of the hotel instance given by users (from 0.0 to 5.0)" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel rating" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRated> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Average rating of the restaurant instance given by users (from 0.0 to 5.0)" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant rating" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommended
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommended> <http://www.w3.org/2000/01/rdf-schema#comment> "Value true if averarge rating is bigger than 4.5" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommended> <http://www.w3.org/2000/01/rdf-schema#label> "Instance is recommended" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommended> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Value True if average rating of the Hotel is higher than 4.5" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel is recommended" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommended> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Value True if average rating of the Restaurant is higher than 4.5" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant is recommended" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographical location of the city instance given by latitude and longitude" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> <http://www.w3.org/2000/01/rdf-schema#label> "City location" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingValue> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating value given to the Attraction by the Customer (between 0.0 and 5.0)" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue> <http://www.w3.org/2000/01/rdf-schema#label> "AtractionRating value" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingValue> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating value given to the Hotel by the Customer (between 0.0 and 5.0)" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue> <http://www.w3.org/2000/01/rdf-schema#label> "HotelRating value" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingValue
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating value given to the instance by Customer" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingValue> <http://www.w3.org/2000/01/rdf-schema#label> "Rating value" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingValue> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating value given to the Restaurant by the Customer (between 0.0 and 5.0)" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "RestaurantRating value" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantRatingDate
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantRatingDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantRatingDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantRatingDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantRatingDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantRatingDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of restaurant rating by customer" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantRatingDate> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant rating date" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of restaurant reservation" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant reservation date" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#transportReservationDate
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#transportReservationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#transportReservationDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#date> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#transportReservationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#transportReservationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#transportReservationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of transport reservation" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#transportReservationDate> <http://www.w3.org/2000/01/rdf-schema#label> "Transport reservation date" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid4 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Places of touristic interest located in a city" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> <http://www.w3.org/2000/01/rdf-schema#label> "Touristic attraction" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Rating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating of an attraction made by a customer" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction rating" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Reservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Attraction reservation including date, customer and attraction" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction reservation" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#oneOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Park> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Museum> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Monument> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cultural> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Beach> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of available touristic attractions in, at least, one city" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType> <http://www.w3.org/2000/01/rdf-schema#label> "Type of touristic attraction" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> <http://www.w3.org/2000/01/rdf-schema#comment> "List of cities holding at least one event during 2024" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#oneOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mexican> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mediterranean> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Japanese> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Italian> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Andalucia> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of cuisine offered by, at least, one of the restaurant instances" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType> <http://www.w3.org/2000/01/rdf-schema#label> "Type of cuisine" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> <http://www.w3.org/2000/01/rdf-schema#comment> "Person who assists to events and can book restaurants, hotels, transport and attractions" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> <http://www.w3.org/2000/01/rdf-schema#label> "Person assisting to an event" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Events taking place in 2024 in cities with touristic interest" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#oneOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Technology> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sports> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Music> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Gastronomy> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Culture> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType> <http://www.w3.org/2000/01/rdf-schema#comment> "Exisiting type of events being held in, at least, one city during 2024" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType> <http://www.w3.org/2000/01/rdf-schema#label> "Type of event" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelCategory> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotels available to book during the events held in 2024" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Rating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating of an hotel made by a customer" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Rating" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Reservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel reservation including date, customer and hotel" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel reservation" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#oneOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Tourist> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Luxury> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Countryside> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Business> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Beach> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of available hotels according to its customer target" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType> <http://www.w3.org/2000/01/rdf-schema#label> "Type of hotel" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Rating
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass including all types of ratings" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Reservation
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Reservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Reservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass including all types of reservations" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Reservation> <http://www.w3.org/2000/01/rdf-schema#label> "Reservation" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid61 .
+_:genid61 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid63 .
+_:genid63 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurants available to eat during the events held in 2024" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid67 .
+_:genid67 <http://www.w3.org/2001/XMLSchema#maxInclusive> "5.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid69 .
+_:genid69 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Rating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating of a restaurant made by a customer" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant Rating" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Reservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurant reservation including date, customer and restaurant" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant reservation" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Available transport means in the cities during the events" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "Companies delivering any kind of transport service" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Company" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Reservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Transport reservation including date, customer and transport" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation> <http://www.w3.org/2000/01/rdf-schema#label> "Transport reservation" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#oneOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Underground> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Trolley> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Taxi> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bus> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bicycle> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType> <http://www.w3.org/2000/01/rdf-schema#comment> "Existing types of urban transport available in, at least, one city" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType> <http://www.w3.org/2000/01/rdf-schema#label> "Type of transport" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Andalucia
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Andalucia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Andalucia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingAttraction> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingAttraction> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionRatingDate> "2024-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newAttractionRatingValue> "3.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#IsAttractionReserved> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#attractionReservartionDate> "2024-12-12T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Saragossa> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfAttractionType> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Museum> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction> "Castell Saragossa" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction> "3.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_2
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInAttraction> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sevilla> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfAttractionType> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Monument> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameAttraction> "Castell Sevilla" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedAttraction> "4.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Barcelona
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Barcelona> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> "41.3874,2.1686" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Barcelona> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Barcelona" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Beach
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Beach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Beach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Beach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bicycle
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bilbao
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bilbao> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> "43.2630,-2.9350" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bilbao> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Bilbao" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bus
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Business
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cadis
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cadis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cadis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cadis> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> "36.5297,-6.2920" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cadis> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/C%C3%A1diz" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CitySaragossa
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CitySaragossa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CitySaragossa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Countryside
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Countryside> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Countryside> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cultural
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Culture
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Culture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Culture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isAssistingTo> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesTransportReservation> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation_1> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_2
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isAssistingTo> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_2> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesAttractionReservation> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionReservation_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesHotelReservation> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_reservation_2> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#makesRestaurantReservation> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_2> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cadis> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfEventType> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sports> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate> "2024-06-02T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent> "Congrés Cadis" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_2
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInEvent> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Cadis> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfEventType> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sports> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#eventDate> "2024-04-19T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameEvent> "Carnaval Cadis" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Gastronomy
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Gastronomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Gastronomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Pamplona> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfHotelType> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Luxury> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel> "Hotel Royal Pamplona" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceHotel> "56"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelCategory> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel> "3.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingHotel> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_2> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingHotel> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelRatingDate> "2024-02-02T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newHotelRatingValue> "4.4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate> "2024-10-10T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInHotel> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sevilla> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfHotelType> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Beach> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameHotel> "Hotel Vista Sevilla" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPrice> "278"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelCategory> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel> "4.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_reservation_2
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_reservation_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_reservation_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_reservation_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isHotelReserved> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel2> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel_reservation_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hotelReservationDate> "2024-11-11T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Italian
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Italian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Italian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Japanese
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Japanese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Japanese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Luxury
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Luxury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Luxury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Madrid
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Madrid> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> "40.4168,-3.7038" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Madrid> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Madrid" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mediterranean
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mediterranean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mediterranean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mexican
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mexican> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mexican> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#CuisineType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Monument
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Monument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Monument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#MoviCadis
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#MoviCadis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#MoviCadis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Museum
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Music
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Màlaga
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Màlaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Màlaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Màlaga> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> "36.7213,-4.4210" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Màlaga> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/M%C3%A1laga" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Pamplona
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Pamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Pamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Pamplona> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> "42.8169,-1.6444" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Pamplona> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Pamplona" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Park
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#AttractionType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatingRestaurant> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Customer_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRatingRestaurant> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#newRestaurantRatingValue> "4.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantRating_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantRatingDate> "2024-03-03T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate> "2024-10-10T20:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_2
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRestaurantReserved> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_2> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#RestaurantReservation_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#restaurantReservationDate> "2024-09-09T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Toledo> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfCuisineType> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Mexican> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant> "Restaurant Tradició Toledo" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant> "46"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant> "3.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_2
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInRestaurant> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Madrid> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfCuisineType> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Japanese> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasNameRestaurant> "Restaurant Gourmet Madrid" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceRestaurant> "30"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant> "4.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sant_Sebastià
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sant_Sebastià> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sant_Sebastià> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sant_Sebastià> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> "43.3183,-1.9812" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sant_Sebastià> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/San_Sebasti%C3%A1n" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Saragossa
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Saragossa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Saragossa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Saragossa> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> "41.6488,-0.8891" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Saragossa> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Zaragoza" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sevilla
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sevilla> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> "37.3886,-5.9823" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sevilla> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Seville" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sports
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Sports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Taxi
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Technology
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Technology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Technology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#EventType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Toledo
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Toledo> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> "39.8628,-4.0273" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Toledo> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Toledo,_Spain" .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Tourist
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Tourist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Tourist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#HotelType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransBilbao
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransBilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransToledo
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isTransportReserved> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_1> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportReservation_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#transportReservationDate> "2024-09-09T09:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_1
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Madrid> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfTransportType> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Underground> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfferedBy> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#UrbanMadrid> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport> "8.85"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_2
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isInTransport> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Bilbao> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfTransportType> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Taxi> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isOfferedBy> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransBilbao> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport_2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#hasPriceTransport> "5.75"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Trolley
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Trolley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Trolley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Underground
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Underground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Underground> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportType> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#UrbanMadrid
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#UrbanMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#UrbanMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#TransportCompany> .
+# 
+# http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#València
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#València> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#València> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#València> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#location> "39.4699,-0.3763" .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#València> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Valencia" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid76 <http://www.w3.org/2002/07/owl#members> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Transport> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Event> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#City> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Attraction> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid105 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid105 <http://www.w3.org/2000/01/rdf-schema#comment> "Marks a restaurant as recommended if average rating is over 4.5" .
+_:genid105 <http://www.w3.org/2000/01/rdf-schema#label> "Restaruant is recommended" .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid105 <http://www.w3.org/2003/11/swrl#body> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid107 .
+_:genid107 <http://www.w3.org/2003/11/swrl#arguments> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid111 .
+_:genid111 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> .
+_:genid111 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid111 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid113 .
+_:genid113 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid113 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid105 <http://www.w3.org/2003/11/swrl#head> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid115 .
+_:genid115 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid115 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid115 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid116 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid116 <http://www.w3.org/2000/01/rdf-schema#comment> "Marks a restaurant as not recommended if average rating is 4.5 or lower" .
+_:genid116 <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant is not recommended" .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid116 <http://www.w3.org/2003/11/swrl#body> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid118 .
+_:genid118 <http://www.w3.org/2003/11/swrl#arguments> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid122 .
+_:genid122 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> .
+_:genid122 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid122 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedRestaurant> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid124 .
+_:genid124 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid124 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Restaurant> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid116 <http://www.w3.org/2003/11/swrl#head> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid126 .
+_:genid126 <http://www.w3.org/2003/11/swrl#argument2> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid126 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid126 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedRestaurant> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid83 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid83 <http://www.w3.org/2000/01/rdf-schema#comment> "Marks an hotel as recommended if average rating is over 4.5" .
+_:genid83 <http://www.w3.org/2000/01/rdf-schema#label> "Hotel is recommended" .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid83 <http://www.w3.org/2003/11/swrl#body> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid85 .
+_:genid85 <http://www.w3.org/2003/11/swrl#arguments> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid89 .
+_:genid89 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> .
+_:genid89 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid89 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid91 .
+_:genid91 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid91 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid83 <http://www.w3.org/2003/11/swrl#head> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid93 .
+_:genid93 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid93 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid93 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid94 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid94 <http://www.w3.org/2000/01/rdf-schema#comment> "Marks an hotel as not recommended if average rating is 4.5 or lower" .
+_:genid94 <http://www.w3.org/2000/01/rdf-schema#label> "Hotel is not recommended" .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid94 <http://www.w3.org/2003/11/swrl#body> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid96 .
+_:genid96 <http://www.w3.org/2003/11/swrl#arguments> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
+_:genid100 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/v> .
+_:genid100 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid100 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRatedHotel> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid102 .
+_:genid102 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid102 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#Hotel> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid94 <http://www.w3.org/2003/11/swrl#head> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid104 .
+_:genid104 <http://www.w3.org/2003/11/swrl#argument2> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid104 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt/r> .
+_:genid104 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/enric/ontologies/2025/3/STROnt#isRecommendedHotel> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
